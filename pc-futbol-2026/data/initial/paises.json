@@ -1,7 +1,7 @@
 [
   {
     "id": "ESP",
-    "nombre": "España",
+    "nombre": "Espana",
     "continente": "Europa"
   },
   {
@@ -27,21 +27,21 @@
   {
     "id": "ARG",
     "nombre": "Argentina",
-    "continente": "Sudamérica"
+    "continente": "Sudamerica"
   },
   {
     "id": "BRA",
     "nombre": "Brasil",
-    "continente": "Sudamérica"
+    "continente": "Sudamerica"
   },
   {
     "id": "MEX",
-    "nombre": "México",
+    "nombre": "Mexico",
     "continente": "CONCACAF"
   },
   {
     "id": "NED",
-    "nombre": "Países Bajos",
+    "nombre": "Paises Bajos",
     "continente": "Europa"
   },
   {
@@ -51,33 +51,33 @@
   },
   {
     "id": "BEL",
-    "nombre": "Bélgica",
+    "nombre": "Belgica",
     "continente": "Europa"
   },
   {
     "id": "SEN",
     "nombre": "Senegal",
-    "continente": "África"
+    "continente": "Africa"
   },
   {
     "id": "CMR",
-    "nombre": "Camerún",
-    "continente": "África"
+    "nombre": "Camerun",
+    "continente": "Africa"
   },
   {
     "id": "CIV",
     "nombre": "Costa de Marfil",
-    "continente": "África"
+    "continente": "Africa"
   },
   {
     "id": "COL",
     "nombre": "Colombia",
-    "continente": "Sudamérica"
+    "continente": "Sudamerica"
   },
   {
     "id": "URU",
     "nombre": "Uruguay",
-    "continente": "Sudamérica"
+    "continente": "Sudamerica"
   },
   {
     "id": "CRO",
@@ -87,7 +87,7 @@
   {
     "id": "MAR",
     "nombre": "Marruecos",
-    "continente": "África"
+    "continente": "Africa"
   },
   {
     "id": "USA",
@@ -96,7 +96,32 @@
   },
   {
     "id": "JPN",
-    "nombre": "Japón",
+    "nombre": "Japon",
     "continente": "Asia"
+  },
+  {
+    "id": "CHL",
+    "nombre": "Chile",
+    "continente": "Sudamerica"
+  },
+  {
+    "id": "PAR",
+    "nombre": "Paraguay",
+    "continente": "Sudamerica"
+  },
+  {
+    "id": "BOL",
+    "nombre": "Bolivia",
+    "continente": "Sudamerica"
+  },
+  {
+    "id": "PER",
+    "nombre": "Peru",
+    "continente": "Sudamerica"
+  },
+  {
+    "id": "ECU",
+    "nombre": "Ecuador",
+    "continente": "Sudamerica"
   }
 ]

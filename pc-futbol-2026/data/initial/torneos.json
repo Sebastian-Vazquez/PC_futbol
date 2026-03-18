@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1001,
+    "nombre": "Copa del Rey",
+    "pais": "ESP",
+    "tipo": "copa_eliminacion",
+    "participantes": "todos"
+  },
+  {
+    "id": 1002,
+    "nombre": "Supercopa de España",
+    "pais": "ESP",
+    "tipo": "supercopa",
+    "participantes": "top4"
+  },
+  {
+    "id": 2001,
+    "nombre": "FA Cup",
+    "pais": "ENG",
+    "tipo": "copa_eliminacion",
+    "participantes": "todos"
+  },
+  {
+    "id": 2002,
+    "nombre": "EFL Cup",
+    "pais": "ENG",
+    "tipo": "copa_eliminacion",
+    "participantes": "profesional"
+  },
+  {
+    "id": 2003,
+    "nombre": "Community Shield",
+    "pais": "ENG",
+    "tipo": "supercopa",
+    "participantes": "top2"
+  },
+  {
+    "id": 3001,
+    "nombre": "Coppa Italia",
+    "pais": "ITA",
+    "tipo": "copa_eliminacion",
+    "participantes": "profesional"
+  },
+  {
+    "id": 3002,
+    "nombre": "Supercoppa Italiana",
+    "pais": "ITA",
+    "tipo": "supercopa",
+    "participantes": "top2"
+  },
+  {
+    "id": 4001,
+    "nombre": "DFB-Pokal",
+    "pais": "GER",
+    "tipo": "copa_eliminacion",
+    "participantes": "todos"
+  },
+  {
+    "id": 4002,
+    "nombre": "DFL-Supercup",
+    "pais": "GER",
+    "tipo": "supercopa",
+    "participantes": "top2"
+  },
+  {
+    "id": 5001,
+    "nombre": "Coupe de France",
+    "pais": "FRA",
+    "tipo": "copa_eliminacion",
+    "participantes": "todos"
+  },
+  {
+    "id": 5002,
+    "nombre": "Coupe de la Ligue",
+    "pais": "FRA",
+    "tipo": "copa_eliminacion",
+    "participantes": "profesional"
+  },
+  {
+    "id": 5003,
+    "nombre": "Trophée des Champions",
+    "pais": "FRA",
+    "tipo": "supercopa",
+    "participantes": "top2"
+  },
+  {
+    "id": 6001,
+    "nombre": "Copa Argentina",
+    "pais": "ARG",
+    "tipo": "copa_eliminacion",
+    "participantes": "todos"
+  },
+  {
+    "id": 6002,
+    "nombre": "Copa de la Liga",
+    "pais": "ARG",
+    "tipo": "copa_grupos",
+    "participantes": "primera"
+  },
+  {
+    "id": 6003,
+    "nombre": "Supercopa Argentina",
+    "pais": "ARG",
+    "tipo": "supercopa",
+    "participantes": "top2"
+  },
+  {
+    "id": 9001,
+    "nombre": "UEFA Champions League",
+    "pais": "EUR",
+    "tipo": "champions",
+    "participantes": "clasificados"
+  },
+  {
+    "id": 9002,
+    "nombre": "UEFA Europa League",
+    "pais": "EUR",
+    "tipo": "europa_league",
+    "participantes": "clasificados"
+  },
+  {
+    "id": 9003,
+    "nombre": "UEFA Conference League",
+    "pais": "EUR",
+    "tipo": "conference",
+    "participantes": "clasificados"
+  },
+  {
+    "id": 9101,
+    "nombre": "Copa Libertadores",
+    "pais": "SAM",
+    "tipo": "libertadores",
+    "participantes": "clasificados"
+  },
+  {
+    "id": 9102,
+    "nombre": "Copa Sudamericana",
+    "pais": "SAM",
+    "tipo": "sudamericana",
+    "participantes": "clasificados"
+  }
+]
