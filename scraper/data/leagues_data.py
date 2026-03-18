@@ -60,11 +60,36 @@ LIGAS_CONFIG = {
     605: {"nombre": "Torneo Federal B",           "pais": "ARG", "tier": 4, "finanzas_factor": 0.001,"descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 32},
     606: {"nombre": "Primera D",                  "pais": "ARG", "tier": 5, "finanzas_factor": 0.001,"descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 16},
 
-    # ═══════ OTROS ═══════
+    # ═══════ OTROS (BRASIL, MEXICO, HOLANDA, PORTUGAL) ═══════
     7:   {"nombre": "Série A",                    "pais": "BRA", "tier": 1, "finanzas_factor": 0.12, "descensos": 4, "plazas_champions": 0, "plazas_europa": 4, "num_equipos": 20},
     8:   {"nombre": "Liga MX",                    "pais": "MEX", "tier": 1, "finanzas_factor": 0.15, "descensos": 0, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 18},
     9:   {"nombre": "Eredivisie",                 "pais": "NED", "tier": 1, "finanzas_factor": 0.20, "descensos": 2, "plazas_champions": 2, "plazas_europa": 2, "num_equipos": 18},
     10:  {"nombre": "Primeira Liga",              "pais": "POR", "tier": 1, "finanzas_factor": 0.18, "descensos": 3, "plazas_champions": 2, "plazas_europa": 2, "num_equipos": 18},
+
+    # ═══════ INTERNACIONALES — Club World Cup / UCL / Copa Libertadores ═══════
+    11:  {"nombre": "Saudi Pro League",           "pais": "SAU", "tier": 1, "finanzas_factor": 0.60, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 18},
+    12:  {"nombre": "J1 League",                  "pais": "JPN", "tier": 1, "finanzas_factor": 0.12, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 18},
+    13:  {"nombre": "K League 1",                 "pais": "KOR", "tier": 1, "finanzas_factor": 0.08, "descensos": 2, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 12},
+    14:  {"nombre": "MLS",                        "pais": "USA", "tier": 1, "finanzas_factor": 0.25, "descensos": 0, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 29},
+    15:  {"nombre": "A-League",                   "pais": "AUS", "tier": 1, "finanzas_factor": 0.08, "descensos": 0, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 12},
+    16:  {"nombre": "Egyptian Premier League",    "pais": "EGY", "tier": 1, "finanzas_factor": 0.05, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 18},
+    17:  {"nombre": "Botola Pro",                 "pais": "MAR", "tier": 1, "finanzas_factor": 0.04, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 16},
+    18:  {"nombre": "Premier Soccer League",      "pais": "RSA", "tier": 1, "finanzas_factor": 0.04, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 16},
+    19:  {"nombre": "Super Lig",                  "pais": "TUR", "tier": 1, "finanzas_factor": 0.35, "descensos": 3, "plazas_champions": 2, "plazas_europa": 2, "num_equipos": 19},
+    20:  {"nombre": "Belgian Pro League",         "pais": "BEL", "tier": 1, "finanzas_factor": 0.25, "descensos": 3, "plazas_champions": 1, "plazas_europa": 2, "num_equipos": 16},
+    21:  {"nombre": "Austrian Bundesliga",        "pais": "AUT", "tier": 1, "finanzas_factor": 0.22, "descensos": 3, "plazas_champions": 2, "plazas_europa": 1, "num_equipos": 12},
+    22:  {"nombre": "Scottish Premiership",       "pais": "SCO", "tier": 1, "finanzas_factor": 0.18, "descensos": 3, "plazas_champions": 1, "plazas_europa": 2, "num_equipos": 12},
+    23:  {"nombre": "Ukrainian Premier League",   "pais": "UKR", "tier": 1, "finanzas_factor": 0.15, "descensos": 3, "plazas_champions": 2, "plazas_europa": 1, "num_equipos": 16},
+    24:  {"nombre": "Super League Switzerland",   "pais": "CHE", "tier": 1, "finanzas_factor": 0.25, "descensos": 2, "plazas_champions": 1, "plazas_europa": 1, "num_equipos": 10},
+    25:  {"nombre": "Czech First League",         "pais": "CZE", "tier": 1, "finanzas_factor": 0.15, "descensos": 3, "plazas_champions": 1, "plazas_europa": 2, "num_equipos": 16},
+    26:  {"nombre": "Serbian SuperLiga",          "pais": "SRB", "tier": 1, "finanzas_factor": 0.08, "descensos": 3, "plazas_champions": 1, "plazas_europa": 1, "num_equipos": 16},
+    27:  {"nombre": "Super League Greece",        "pais": "GRE", "tier": 1, "finanzas_factor": 0.15, "descensos": 3, "plazas_champions": 1, "plazas_europa": 2, "num_equipos": 14},
+    28:  {"nombre": "Danish Superliga",           "pais": "DNK", "tier": 1, "finanzas_factor": 0.18, "descensos": 3, "plazas_champions": 1, "plazas_europa": 1, "num_equipos": 14},
+    29:  {"nombre": "Allsvenskan",                "pais": "SWE", "tier": 1, "finanzas_factor": 0.15, "descensos": 3, "plazas_champions": 1, "plazas_europa": 1, "num_equipos": 16},
+    30:  {"nombre": "UAE Pro League",             "pais": "UAE", "tier": 1, "finanzas_factor": 0.30, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 14},
+    31:  {"nombre": "Ligue Professionnelle 1",    "pais": "TUN", "tier": 1, "finanzas_factor": 0.04, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 14},
+    32:  {"nombre": "NPFL Nigeria",               "pais": "NGA", "tier": 1, "finanzas_factor": 0.02, "descensos": 3, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 20},
+    33:  {"nombre": "OFC Champions League",       "pais": "NZL", "tier": 1, "finanzas_factor": 0.01, "descensos": 0, "plazas_champions": 0, "plazas_europa": 0, "num_equipos": 8},
 }
 
 # Torneos/Copas
@@ -90,11 +115,42 @@ TORNEOS = [
     {"id": 6001, "nombre": "Copa Argentina",        "pais": "ARG", "tipo": "copa_eliminacion", "participantes": "todos"},
     {"id": 6002, "nombre": "Copa de la Liga",       "pais": "ARG", "tipo": "copa_grupos",       "participantes": "primera"},
     {"id": 6003, "nombre": "Supercopa Argentina",   "pais": "ARG", "tipo": "supercopa",         "participantes": "top2"},
-    # Europa
-    {"id": 9001, "nombre": "UEFA Champions League", "pais": "EUR", "tipo": "champions",         "participantes": "clasificados"},
-    {"id": 9002, "nombre": "UEFA Europa League",    "pais": "EUR", "tipo": "europa_league",     "participantes": "clasificados"},
-    {"id": 9003, "nombre": "UEFA Conference League","pais": "EUR", "tipo": "conference",        "participantes": "clasificados"},
-    # Sudamérica
-    {"id": 9101, "nombre": "Copa Libertadores",     "pais": "SAM", "tipo": "libertadores",      "participantes": "clasificados"},
-    {"id": 9102, "nombre": "Copa Sudamericana",     "pais": "SAM", "tipo": "sudamericana",      "participantes": "clasificados"},
+    # Europa — UEFA
+    {"id": 9001, "nombre": "UEFA Champions League",  "pais": "EUR", "tipo": "champions",        "participantes": "clasificados", "cupos": 36,
+     "cupos_pais": {"ESP": 4, "ENG": 4, "GER": 4, "ITA": 4, "FRA": 3, "NED": 2, "POR": 2, "TUR": 2, "BEL": 1, "AUT": 2, "SCO": 1, "UKR": 2, "CHE": 1, "CZE": 1, "SRB": 1, "GRE": 1, "DNK": 1, "SWE": 1}},
+    {"id": 9002, "nombre": "UEFA Europa League",     "pais": "EUR", "tipo": "europa_league",    "participantes": "clasificados", "cupos": 36,
+     "cupos_pais": {"ESP": 2, "ENG": 2, "GER": 2, "ITA": 2, "FRA": 2, "NED": 2, "POR": 2, "TUR": 2, "BEL": 2, "AUT": 1, "SCO": 2, "UKR": 1, "CHE": 1, "CZE": 2, "SRB": 1, "GRE": 2, "DNK": 1, "SWE": 1}},
+    {"id": 9003, "nombre": "UEFA Conference League", "pais": "EUR", "tipo": "conference",       "participantes": "clasificados", "cupos": 36,
+     "cupos_pais": {"ESP": 1, "ENG": 1, "GER": 1, "ITA": 1, "FRA": 1, "NED": 1, "POR": 1, "TUR": 1, "BEL": 1, "AUT": 1, "SCO": 1, "UKR": 1, "CHE": 1, "CZE": 1, "SRB": 1, "GRE": 1, "DNK": 1, "SWE": 1}},
+    {"id": 9004, "nombre": "UEFA Super Cup",         "pais": "EUR", "tipo": "supercopa",        "participantes": "campeones_uefa"},
+    # Sudamérica — CONMEBOL
+    {"id": 9101, "nombre": "Copa Libertadores",      "pais": "SAM", "tipo": "libertadores",     "participantes": "clasificados", "cupos": 32,
+     "cupos_pais": {"ARG": 6, "BRA": 8, "URU": 3, "CHL": 3, "COL": 3, "ECU": 2, "PER": 2, "BOL": 2, "PAR": 2, "VEN": 1}},
+    {"id": 9102, "nombre": "Copa Sudamericana",      "pais": "SAM", "tipo": "sudamericana",     "participantes": "clasificados", "cupos": 32,
+     "cupos_pais": {"ARG": 5, "BRA": 5, "URU": 2, "CHL": 2, "COL": 2, "ECU": 2, "PER": 2, "BOL": 2, "PAR": 2, "VEN": 2}},
+    {"id": 9103, "nombre": "Recopa Sudamericana",    "pais": "SAM", "tipo": "supercopa",        "participantes": "campeones_sam"},
+    # CONCACAF
+    {"id": 9201, "nombre": "CONCACAF Champions Cup", "pais": "CONCACAF", "tipo": "champions",  "participantes": "clasificados", "cupos": 27,
+     "cupos_pais": {"USA": 7, "MEX": 7, "CAN": 3, "CRC": 1, "HON": 1, "JAM": 1, "GTM": 1, "SLV": 1, "TRI": 1, "PAN": 1}},
+    {"id": 9202, "nombre": "CONCACAF League",        "pais": "CONCACAF", "tipo": "copa",       "participantes": "clasificados", "cupos": 22},
+    # África — CAF
+    {"id": 9301, "nombre": "CAF Champions League",   "pais": "AFR", "tipo": "champions",       "participantes": "clasificados", "cupos": 16,
+     "cupos_pais": {"EGY": 2, "MAR": 2, "RSA": 2, "TUN": 2, "NGA": 2, "CMR": 1, "SEN": 1, "CIV": 1, "GHA": 1}},
+    {"id": 9302, "nombre": "CAF Confederation Cup",  "pais": "AFR", "tipo": "europa_league",   "participantes": "clasificados", "cupos": 16},
+    {"id": 9303, "nombre": "CAF Super Cup",           "pais": "AFR", "tipo": "supercopa",       "participantes": "campeones_caf"},
+    # Asia — AFC
+    {"id": 9401, "nombre": "AFC Champions League Elite","pais": "ASI", "tipo": "champions",    "participantes": "clasificados", "cupos": 24,
+     "cupos_pais": {"SAU": 4, "JPN": 4, "KOR": 4, "UAE": 2, "CHN": 2, "IRN": 2, "AUS": 2, "IRQ": 2, "UZB": 1, "IDN": 1}},
+    {"id": 9402, "nombre": "AFC Champions League Two","pais": "ASI", "tipo": "europa_league",  "participantes": "clasificados", "cupos": 24},
+    # Mundial — FIFA
+    {"id": 9501, "nombre": "FIFA Club World Cup",    "pais": "FIFA", "tipo": "mundial_clubes",  "participantes": "clasificados", "cupos": 32,
+     "cupos_confederacion": {"UEFA": 12, "CONMEBOL": 6, "CONCACAF": 4, "AFC": 4, "CAF": 4, "OFC": 1, "HOST": 1}},
+    {"id": 9502, "nombre": "FIFA Intercontinental Cup","pais": "FIFA", "tipo": "intercontinental","participantes": "campeones"},
+    # Selecciones (datos de referencia)
+    {"id": 9601, "nombre": "UEFA Euro",              "pais": "EUR", "tipo": "selecciones",     "participantes": "selecciones_uefa", "cupos": 24},
+    {"id": 9602, "nombre": "Copa America",           "pais": "SAM", "tipo": "selecciones",     "participantes": "selecciones_conmebol", "cupos": 16},
+    {"id": 9603, "nombre": "FIFA World Cup",         "pais": "FIFA", "tipo": "selecciones",    "participantes": "clasificadas", "cupos": 48},
+    {"id": 9604, "nombre": "CONCACAF Gold Cup",      "pais": "CONCACAF", "tipo": "selecciones","participantes": "clasificadas", "cupos": 16},
+    {"id": 9605, "nombre": "Africa Cup of Nations",  "pais": "AFR", "tipo": "selecciones",     "participantes": "clasificadas", "cupos": 24},
+    {"id": 9606, "nombre": "AFC Asian Cup",          "pais": "ASI", "tipo": "selecciones",     "participantes": "clasificadas", "cupos": 24},
 ]

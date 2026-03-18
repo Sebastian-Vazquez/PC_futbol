@@ -47,7 +47,7 @@ func _cargar_json(nombre: String, destino: Dictionary) -> void:
 	if data is Array:
 		for item in data:
 			if item.has("id"):
-				destino[item["id"]] = item
+				destino[int(item["id"])] = item
 	elif data is Dictionary:
 		destino.merge(data)
 
@@ -59,7 +59,7 @@ func _construir_indices() -> void:
 
 	for id in jugadores:
 		var j: Dictionary = jugadores[id]
-		var eid: int = j.get("equipo_id", -1)
+		var eid: int = int(j.get("equipo_id", -1))
 		if eid == -1:
 			jugadores_libres.append(id)
 		else:
@@ -78,11 +78,11 @@ func _construir_indices() -> void:
 	equipos_por_liga.clear()
 	for id in equipos:
 		var e: Dictionary = equipos[id]
-		var lid: int = e.get("liga_id", -1)
+		var lid: int = int(e.get("liga_id", -1))
 		if lid != -1:
 			if not equipos_por_liga.has(lid):
 				equipos_por_liga[lid] = []
-			equipos_por_liga[lid].append(id)
+			equipos_por_liga[lid].append(int(id))
 
 func obtener_jugador(id: int) -> Dictionary:
 	return jugadores.get(id, {})

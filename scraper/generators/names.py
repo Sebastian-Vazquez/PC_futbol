@@ -112,6 +112,160 @@ NOMBRES = {
         "apellidos": ["Jiménez", "Lozano", "Álvarez", "Corona", "Ochoa", "Moreno", "Araujo",
                       "Sánchez", "Herrera", "Gallardo", "Antuna", "Vega", "Guardado", "Layún"]
     },
+    "TUR": {
+        "nombres": ["Alpay", "Arda", "Burak", "Calhanoglu", "Cengiz", "Emre", "Furkan",
+                    "Hakan", "Kerem", "Merih", "Mert", "Ozan", "Samet", "Serdar", "Yusuf"],
+        "apellidos": ["Yilmaz", "Kaya", "Demir", "Sahin", "Celik", "Arslan", "Dogan",
+                      "Yildiz", "Calhanoglu", "Demiral", "Kabak", "Soyuncu", "Under",
+                      "Yazici", "Kokcu", "Guler", "Aktürkoğlu", "Karaman", "Bardakci"]
+    },
+    "BEL": {
+        "nombres": ["Axel", "Charles", "Dries", "Eden", "Jeremy", "Kevin", "Leandro",
+                    "Loïs", "Nacer", "Romelu", "Thomas", "Thorgan", "Timothy", "Yannick"],
+        "apellidos": ["De Bruyne", "Hazard", "Lukaku", "Tielemans", "Vertonghen",
+                      "Alderweireld", "Witsel", "Mertens", "Carrasco", "Origi",
+                      "Mangala", "Boyata", "Casteels", "Theate", "Onana", "Nkunku"]
+    },
+    "AUT": {
+        "nombres": ["David", "Florian", "Konrad", "Marcel", "Marko", "Martin", "Michael",
+                    "Patrick", "Peter", "Philipp", "Raphael", "Stefan", "Thomas"],
+        "apellidos": ["Alaba", "Grillitsch", "Sabitzer", "Lazaro", "Gregoritsch",
+                      "Baumgartner", "Seiwald", "Kainz", "Weimann", "Trimmel",
+                      "Posch", "Prassl", "Danso", "Wimmer", "Hedl", "Pentz"]
+    },
+    "SCO": {
+        "nombres": ["Andrew", "Callum", "Craig", "Danny", "Grant", "James", "John",
+                    "Kevin", "Kieran", "Liam", "Lewis", "Ryan", "Scott", "Stuart"],
+        "apellidos": ["Robertson", "McGregor", "Tierney", "McGinn", "Armstrong",
+                      "Gilmour", "Adams", "Cooper", "Turnbull", "McKenna",
+                      "Hanley", "Patterson", "Taylor", "Forrest", "Christie"]
+    },
+    "UKR": {
+        "nombres": ["Andriy", "Artem", "Dmytro", "Heorhiy", "Mykhailo", "Oleksandr",
+                    "Roman", "Ruslan", "Serhiy", "Taras", "Viktor", "Vitaliy", "Vladyslav"],
+        "apellidos": ["Shevchenko", "Mudryk", "Malinovskyi", "Zinchenko", "Mykolenko",
+                      "Tsygankov", "Shaparenko", "Lunin", "Trubin", "Dovbyk",
+                      "Bondar", "Matviyenko", "Stepanenko", "Sudakov", "Buyalsky"]
+    },
+    "CHE": {
+        "nombres": ["Breel", "Denis", "Edimilson", "Fabian", "Granit", "Kevin",
+                    "Manuel", "Michel", "Remo", "Ricardo", "Ruben", "Xherdan"],
+        "apellidos": ["Xhaka", "Shaqiri", "Embolo", "Akanji", "Elvedi", "Zakaria",
+                      "Rodriguez", "Zuber", "Freuler", "Okafor", "Vargas",
+                      "Rieder", "Widmer", "Kobel", "Sommer", "Omlin"]
+    },
+    "CZE": {
+        "nombres": ["Adam", "Jan", "Jakub", "Lukas", "Martin", "Michal", "Milan",
+                    "Ondrej", "Pavel", "Petr", "Radek", "Tomas", "Vladimir"],
+        "apellidos": ["Soucek", "Schick", "Coufal", "Kral", "Jankto", "Holes",
+                      "Sadilek", "Hlozek", "Jurasek", "Barak", "Kuchta",
+                      "Vaclik", "Mandous", "Provod", "Lingr", "Matejovsky"]
+    },
+    "SRB": {
+        "nombres": ["Aleksandar", "Dusan", "Filip", "Ivan", "Luka", "Marko",
+                    "Milos", "Nemanja", "Nikola", "Stefan", "Sergej", "Uros"],
+        "apellidos": ["Jovic", "Tadic", "Milinkovic-Savic", "Vlahovic", "Kostic",
+                      "Mitrovic", "Pavlovic", "Lazovic", "Lukic", "Samardzic",
+                      "Gudelj", "Babic", "Radonjic", "Zivkovic", "Djuricic"]
+    },
+    "GRE": {
+        "nombres": ["Christos", "Dimitris", "Giorgos", "Kostas", "Lazaros",
+                    "Manolis", "Nikos", "Panagiotis", "Petros", "Stefanos", "Tasos"],
+        "apellidos": ["Tzavellas", "Fortounis", "Manolas", "Bakasetas", "Masouras",
+                      "Ioannidis", "Pelkas", "Tsimikas", "Giannoulis", "Mavropanos",
+                      "Tzolis", "Koulierakis", "Siopis", "Galanopoulos", "Retsos"]
+    },
+    "DNK": {
+        "nombres": ["Andreas", "Christian", "Daniel", "Emil", "Jannik", "Jonas",
+                    "Kasper", "Lasse", "Mathias", "Mikkel", "Pierre", "Simon", "Victor"],
+        "apellidos": ["Eriksen", "Schmeichel", "Hojberg", "Skov Olsen", "Wind",
+                      "Norgaard", "Jensen", "Maehle", "Andersen", "Christensen",
+                      "Boilesen", "Bah", "Lindstrom", "Hojlund", "Dreyer"]
+    },
+    "SWE": {
+        "nombres": ["Alexander", "Dejan", "Emil", "Gustav", "Isak", "Jordan",
+                    "Karl", "Ludwig", "Marcus", "Mattias", "Patrik", "Sebastian", "Viktor"],
+        "apellidos": ["Ibrahimovic", "Isak", "Forsberg", "Ekdal", "Claesson",
+                      "Olsson", "Danielson", "Lindelof", "Krafth", "Kulusevski",
+                      "Elanga", "Gyokeres", "Almqvist", "Svensson", "Larsson"]
+    },
+    "SAU": {
+        "nombres": ["Abdullah", "Ahmed", "Ali", "Firas", "Hassan", "Khalid",
+                    "Mohammed", "Nasser", "Omar", "Saleh", "Sultan", "Turki", "Yasser"],
+        "apellidos": ["Al-Dawsari", "Al-Buraikan", "Al-Shahrani", "Al-Ghannam",
+                      "Al-Najei", "Al-Malki", "Al-Faraj", "Al-Abed", "Bahebri",
+                      "Al-Tambakti", "Al-Yami", "Al-Khaibari", "Kanno", "Al-Hassan"]
+    },
+    "JPN": {
+        "nombres": ["Daichi", "Gaku", "Hiroki", "Kaoru", "Keigo", "Ko",
+                    "Ritsu", "Ryusei", "Shoya", "Takefusa", "Wataru", "Yuki"],
+        "apellidos": ["Minamino", "Doan", "Kamada", "Ito", "Mitoma", "Tomiyasu",
+                      "Ueda", "Machino", "Furuhashi", "Asano", "Daizen",
+                      "Soma", "Shibasaki", "Morita", "Hashioka", "Suzuki"]
+    },
+    "KOR": {
+        "nombres": ["Changhoon", "Euigyo", "Heechan", "Hwang", "Hyunwoo", "Inbeom",
+                    "Jaesung", "Junho", "Minjae", "Seunggyu", "Sungryong", "Wooram"],
+        "apellidos": ["Son", "Kim", "Lee", "Hwang", "Park", "Cho",
+                      "Kwon", "Jung", "Oh", "Yoon", "Baek", "Na",
+                      "Heechan", "Seungsoo", "Kibum", "Taehyun", "Bomsun"]
+    },
+    "AUS": {
+        "nombres": ["Aaron", "Adam", "Andrew", "Ben", "Chris", "Craig", "Daniel",
+                    "Dylan", "Harry", "Jackson", "James", "Josh", "Liam",
+                    "Marcus", "Martin", "Mathew", "Mitchell", "Riley", "Ryan"],
+        "apellidos": ["Rowles", "Leckie", "Irvine", "Mabil", "Maclaren",
+                      "Devlin", "Atkinson", "Holland", "Wright", "Boyle",
+                      "McGree", "Duke", "Nabbout", "Geria", "Neville", "Toure"]
+    },
+    "EGY": {
+        "nombres": ["Ahmed", "Ali", "Amr", "Hamdi", "Hussein", "Kahraba",
+                    "Mahmoud", "Mohamed", "Mostafa", "Omar", "Ramadan", "Tarek", "Trezeguet"],
+        "apellidos": ["Salah", "El-Neny", "Hegazy", "Galal", "Kahraba",
+                      "El Shenawy", "El Hadary", "Elneny", "Sobhi", "Said",
+                      "Ramadan", "Trézéguet", "Mido", "Aboutrika", "Gedo"]
+    },
+    "RSA": {
+        "nombres": ["Bongani", "Bradley", "Bafana", "Dino", "Elias", "Given",
+                    "Luther", "Lyle", "Ndabayithethwa", "Percy", "Ronwen", "Thembinkosi"],
+        "apellidos": ["Zwane", "Tau", "Lorch", "Foster", "Williams",
+                      "Mudau", "Dolly", "Mokoena", "Kekana", "Shalulile",
+                      "Vilakazi", "Letsholonyane", "Parker", "Zuma", "Mhango"]
+    },
+    "UAE": {
+        "nombres": ["Abdullah", "Ahmad", "Ali", "Hamdan", "Khalid",
+                    "Mohammed", "Omar", "Salem", "Walid", "Yahia", "Youssef"],
+        "apellidos": ["Al-Ahbabi", "Mubarak", "Al-Ameri", "Khalil", "Al-Hammadi",
+                      "Sana", "Al-Shanqiti", "Ismail", "Al-Junaibi", "Abdulrahman"]
+    },
+    "TUN": {
+        "nombres": ["Anis", "Ellyes", "Ferjani", "Hannibal", "Issam",
+                    "Msakni", "Naim", "Seifeddine", "Wahbi", "Wajdi", "Youssef"],
+        "apellidos": ["Jebali", "Msakni", "Sliti", "Skhiri", "Khazri",
+                      "Sassi", "Ben Romdhane", "Drager", "Ghandri", "Bronn",
+                      "Talbi", "Kechrida", "Ben Slimane", "Abdi", "Jelassi"]
+    },
+    "NGA": {
+        "nombres": ["Alex", "Brown", "Chidera", "Emmanuel", "Festus",
+                    "John", "Kelechi", "Moses", "Odion", "Taiwo", "Victor", "Wilfried"],
+        "apellidos": ["Osimhen", "Iheanacho", "Ighalo", "Moses", "Ndidi",
+                      "Mikel", "Ekong", "Collins", "Chukwueze", "Lookman",
+                      "Aribo", "Aina", "Balogun", "Awoniyi", "Adeniran"]
+    },
+    "NZL": {
+        "nombres": ["Clayton", "Danny", "Hamish", "Jake", "Liam", "Matthew",
+                    "Oliver", "Ryan", "Sam", "Tim", "Tom", "Will"],
+        "apellidos": ["Lewis", "Thomas", "Jones", "Smith", "Brown",
+                      "Williams", "White", "Taylor", "Davies", "Evans",
+                      "Hudson", "Fisher", "Riley", "Wood", "Hall"]
+    },
+    "CAN": {
+        "nombres": ["Alphonso", "Atiba", "Cyle", "Jonathan", "Jonathan", "Kamal",
+                    "Lucas", "Liam", "Milan", "Scott", "Stephen", "Tajon"],
+        "apellidos": ["Davies", "Hutchinson", "Larin", "David", "Osorio",
+                      "Miller", "Borjan", "Buchanan", "Eustaquio", "Johnston",
+                      "Waterman", "Henry", "Fraser", "Adekugbe", "Vitoria"]
+    },
 }
 
 # Nombres internacionales / genéricos para países no especificados

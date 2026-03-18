@@ -22,6 +22,8 @@ GameManager="*res://core/game_manager.gd"
 CalendarSystem="*res://core/calendar_system.gd"
 DB="*res://core/database.gd"
 SaveSystem="*res://core/save_system.gd"
+MatchSim="*res://core/match_simulation.gd"
+LeagueSystem="*res://core/league_system.gd"
 
 [physics]
 
