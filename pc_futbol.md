@@ -4212,10 +4212,10 @@ PCFutbol2026/
 │  ESCALA DEL JUEGO:                                           │
 │  ├── ~100,000 jugadores                                     │
 │  ├── ~5,000 equipos                                         │
-│  ├── ~200 ligas en ~50 países                               │
+│  ├── ~200 ligas en ~50 países + COMPETENCIAS INTERNACIONALES FORMATO 2026                               │
 │  ├── ~20,000 staff                                          │
-│  ├── ~1,000 sponsors                                        │
-│  ├── ~30 tipos de mejora de infraestructura                 │
+│  ├── ~2,000 sponsors                                        │
+│  ├── ~130 tipos de mejora de infraestructura                 │
 │  ├── 16 sistemas interconectados                            │
 │  ├── ~30 pantallas de UI                                    │
 │  ├── ~25 animaciones 3D de jugador                          │
@@ -4248,8 +4248,8 @@ PCFutbol2026/
 │  ├── Fase 3 (Economía + fichajes): 3-4 semanas             │
 │  ├── Fase 4 (Estadio + staff): 2-3 semanas                 │
 │  ├── Fase 5 (Profundidad): 4-6 semanas                     │
-│  ├── Fase 6 (Pulido): 3-4 semanas                          │
-│  └── TOTAL: ~5-7 meses de desarrollo                       │
+│  ├── Fase 6 (Pulido): 3-4 MESES                         │
+│  └── TOTAL: ~7-10 meses de desarrollo                       │
 │                                                              │
 │  REQUISITOS MÍNIMOS PC:                                      │
 │  ├── OS: Windows 10 / Linux / macOS                         │
@@ -4272,17 +4272,17 @@ PCFutbol2026/
 │  │  8. 🎮 Match Engine 3D (lo gordo)            │            │
 │  │  9. 🔄 Táctica y formación editor            │            │
 │  │  10. 💰 Economía completa, con merchandaising, venta camisetas, modificacion de estadio, vallas publicitarias, etc                      │            │
-│  │  11. 🤝 Mercado de fichajes                  │            │
+│  │  11. 🤝 Mercado de fichajes COMPLEJO CON VARIABLES QUE INFLUYEN EN LA DECISION DE FICHAR O NO A ALGUIEN                │            │
 │  │  12. 💾 Save/Load                            │            │
-│  │  13. 🏟️ Estadio + infraestructura            │            │
-│  │  14. 👔 Staff + ojeadores                    │            │
-│  │  15. 🎓 Cantera                              │            │
+│  │  13. 🏟️ Estadio + infraestructura + EDIFICIOS QUE CRECEN CON EL CLUB            │            │
+│  │  14. 👔 Staff + ojeadores CON ROLES DEFINIDOS                   │            │
+│  │  15. 🎓 Cantera SIMULADA, TODAS LAS CATEGORIAS JUVENILES, CON COMPETENCIAS Y TORNEOS DE DIVISIONES JUVENILES. DISTINTOS NIVELES DE EDIFICIO DE JUVENILES, DESBLOQUEA POSIBLE RANGO ALEATORIO PARA CALIDAD DE JUGADOR, EJEMPLO, NIVEL 0 ENTRE 5 Y 20 DE STATS PROMEDIO SOBRE 100, NIVEL 1 DE CENTRO JUVENILES ENTRE 5 Y 28, NIVEL 2 ENTRE 5 Y 35... Y ASI... ADEMAS EL JUGADOR DESPUES PUEDE DESARROLLARSE, PERO LA IDEA ES QUE AUMENTAR EL NIVEL SUBA UN POCO LA PROBABILIDAD DE QUE TOQUE UN JUGADOR BUENO, QUE TENDRÁ VARIABLES QUE BAJAN LA POSIBILIDAD DE QUE TOQUE UNO BUENO, COMO SON LA CATEGORIA EN LA QUE ESTA EL CLUB, ETC                             │            │
 │  │  16. 📈 Entrenamiento + desarrollo           │            │
-│  │  17. 🏛️ Directiva + objetivos                │            │
-│  │  18. 📰 Noticias + periódico                 │            │
-│  │  19. 🌍 Más ligas + competiciones             │            │
+│  │  17. 🏛️ Directiva + objetivos + MUSEO + HISTORIA DEL CLUB               │            │
+│  │  18. 📰 Noticias + periódico + RUEDA DE PRENSA QUE AFECTA EN LA IMAGEN DEL PUBLICO               │            │
+│  │  19. 🌍 Más ligas + competiciones + PREMIOS            │            │
 │  │  20. 🎨 Pulido visual + audio
-      21.Generar ligas juveniles, torneos juveniles, selecciones juveniles (todo para simular, pero lo gestionamos nosotros)
+      21.Generar ligas juveniles, torneos juveniles, selecciones juveniles (todo para simular, pero lo gestionamos nosotros DESDE EL CLUB)
       22.Historial de enfrentamientos, continuar historial de cada club, enfrentamientos entre equipos, rivalidades, historial, palmarés, etc.
                       │            │
 │  │                                              │            │
