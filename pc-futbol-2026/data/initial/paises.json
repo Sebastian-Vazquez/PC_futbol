@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ESP",
+    "nombre": "España",
+    "continente": "Europa"
+  },
+  {
+    "id": "ENG",
+    "nombre": "Inglaterra",
+    "continente": "Europa"
+  },
+  {
+    "id": "GER",
+    "nombre": "Alemania",
+    "continente": "Europa"
+  },
+  {
+    "id": "FRA",
+    "nombre": "Francia",
+    "continente": "Europa"
+  },
+  {
+    "id": "ITA",
+    "nombre": "Italia",
+    "continente": "Europa"
+  },
+  {
+    "id": "ARG",
+    "nombre": "Argentina",
+    "continente": "Sudamérica"
+  },
+  {
+    "id": "BRA",
+    "nombre": "Brasil",
+    "continente": "Sudamérica"
+  },
+  {
+    "id": "MEX",
+    "nombre": "México",
+    "continente": "CONCACAF"
+  },
+  {
+    "id": "NED",
+    "nombre": "Países Bajos",
+    "continente": "Europa"
+  },
+  {
+    "id": "POR",
+    "nombre": "Portugal",
+    "continente": "Europa"
+  },
+  {
+    "id": "BEL",
+    "nombre": "Bélgica",
+    "continente": "Europa"
+  },
+  {
+    "id": "SEN",
+    "nombre": "Senegal",
+    "continente": "África"
+  },
+  {
+    "id": "CMR",
+    "nombre": "Camerún",
+    "continente": "África"
+  },
+  {
+    "id": "CIV",
+    "nombre": "Costa de Marfil",
+    "continente": "África"
+  },
+  {
+    "id": "COL",
+    "nombre": "Colombia",
+    "continente": "Sudamérica"
+  },
+  {
+    "id": "URU",
+    "nombre": "Uruguay",
+    "continente": "Sudamérica"
+  },
+  {
+    "id": "CRO",
+    "nombre": "Croacia",
+    "continente": "Europa"
+  },
+  {
+    "id": "MAR",
+    "nombre": "Marruecos",
+    "continente": "África"
+  },
+  {
+    "id": "USA",
+    "nombre": "Estados Unidos",
+    "continente": "CONCACAF"
+  },
+  {
+    "id": "JPN",
+    "nombre": "Japón",
+    "continente": "Asia"
+  }
+]

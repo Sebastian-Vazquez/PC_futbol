@@ -37,12 +37,22 @@ func _ready() -> void:
 	var proximos := CalendarSystem.obtener_proximos_eventos(3)
 	print("Próximos eventos programados: %d" % proximos.size())
 
-	# Test save/load
-	SaveSystem.guardar(1)
-	print("Save slot 1 creado ✓")
-	var saves := SaveSystem.listar_saves()
-	print("Saves disponibles: %d" % saves.size())
+	# Test base de datos con datos reales
+	DB.cargar_todo()
+	print("\n--- BASE DE DATOS ---")
+	print("Jugadores: %d" % DB.jugadores.size())
+	print("Equipos:   %d" % DB.equipos.size())
+	print("Ligas:     %d" % DB.ligas.size())
+	if DB.equipos.size() > 0:
+		var e = DB.equipos.values()[0]
+		print("Equipo[0]: %s (%s)" % [e.get("nombre","?"), e.get("pais","?")])
+	if DB.jugadores.size() > 0:
+		var j = DB.jugadores.values()[0]
+		print("Jugador[0]: %s %s — %s — Media: %d" % [
+			j.get("nombre","?"), j.get("apellido","?"),
+			j.get("posicion_principal","?"), j.get("media", 0)
+		])
 
 	print("\n" + "=" .repeat(40))
-	print("  FASE 1 COMPLETADA — Sin errores")
+	print("  FASES 1 y 2 COMPLETADAS")
 	print("=" .repeat(40))
