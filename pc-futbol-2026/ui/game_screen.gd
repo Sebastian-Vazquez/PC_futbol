@@ -85,6 +85,7 @@ var _lbl_pos:     Label
 var _bodies:      Dictionary = {}
 var _scrolls:     Dictionary = {}
 var _tab_btns:    Dictionary = {}
+var _fondos:      Dictionary = {}   # key -> TextureRect (fondo de pestaña)
 var _content_area: Control
 var _selector_root: Control
 var _sel_opt:     OptionButton
@@ -301,9 +302,6 @@ func _build_content_area() -> Control:
 		sc.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		sc.visible = false
 
-		# Fondo de pestaña (si existe la imagen)
-		_cargar_fondo_tab(sc, key)
-
 		var mg := MarginContainer.new()
 		mg.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		_set_margins(mg, 18, 14, 18, 14)
@@ -318,6 +316,10 @@ func _build_content_area() -> Control:
 		_bodies[key]  = vb
 		area.add_child(sc)
 
+		# Fondo DESPUÉS de añadir al árbol para que get_parent() funcione.
+		# Se añade al área padre, NO al ScrollContainer (si no se scrollea).
+		_cargar_fondo_tab(area, key)
+
 	return area
 
 func _mostrar_tab(key: String) -> void:
@@ -326,6 +328,8 @@ func _mostrar_tab(key: String) -> void:
 		(_scrolls[k] as ScrollContainer).visible = (k == key)
 	for k in _tab_btns:
 		_estilo_btn_nav(_tab_btns[k] as Button, k == key)
+	for k in _fondos:
+		(_fondos[k] as TextureRect).visible = (k == key)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # HUD UPDATE
@@ -2173,9 +2177,10 @@ func _mostrar_notif(texto: String) -> void:
 # HELPERS UI
 # ══════════════════════════════════════════════════════════════════════════════
 
-func _cargar_fondo_tab(sc: ScrollContainer, key: String) -> void:
-	# Intenta cargar res://assets/backgrounds/<key>.png (o .jpg / .webp)
-	var extensiones: Array = ["png", "jpg", "webp"]
+func _cargar_fondo_tab(area: Control, key: String) -> void:
+	## Carga la imagen de fondo y la añade al área contenedora (NO al ScrollContainer).
+	## Así el fondo queda fijo detrás del contenido aunque el usuario haga scroll.
+	var extensiones: Array = ["png", "jpg", "jpeg", "webp"]
 	for ext in extensiones:
 		var ruta: String = "res://assets/backgrounds/%s.%s" % [key, ext]
 		if ResourceLoader.exists(ruta):
@@ -2187,8 +2192,12 @@ func _cargar_fondo_tab(sc: ScrollContainer, key: String) -> void:
 				bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 				bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 				bg.modulate = Color(1, 1, 1, 0.18)   # opacidad 18% — decorativo
-				bg.z_index = -1
-				sc.add_child(bg)
+				bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+				bg.visible = false   # se activa en _mostrar_tab
+				area.add_child(bg)
+				# Colocar DEBAJO del ScrollContainer en el árbol de renderizado
+				area.move_child(bg, 0)
+				_fondos[key] = bg
 				break
 
 func _clear_body(key: String) -> void:

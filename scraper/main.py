@@ -22,7 +22,9 @@ from data.teams_international import INTERNATIONAL
 from generators.players import generar_plantilla
 from generators.youth import generar_todas_las_canteras
 from generators.badges import generar_todos_los_escudos
-from generators.h2h import generar_h2h
+from generators.h2h_real import descargar_h2h_real
+from generators.h2h_internacional import generar_h2h_internacional
+from data.club_historia import HISTORIA_REAL
 
 random.seed(42)
 
@@ -67,6 +69,22 @@ def generar_ligas():
             "num_equipos": n_equipos if n_equipos > 0 else cfg.get("num_equipos", 0),
         })
     return ligas
+
+
+def _historia_para(equipo_id: int, reputacion: int) -> dict:
+    """Devuelve datos históricos reales si existen, o valores generados por defecto."""
+    if equipo_id in HISTORIA_REAL:
+        return dict(HISTORIA_REAL[equipo_id])
+    # Valores generados por defecto basados en reputación
+    return {
+        "fundacion": random.randint(1880, 1980),
+        "titulos_liga": max(0, int((reputacion - 70) / 5)) if reputacion >= 70 else 0,
+        "titulos_copa": max(0, int((reputacion - 65) / 7)) if reputacion >= 65 else 0,
+        "titulos_continental": 0,
+        "titulos_mundial": 0,
+        "titulos_supercopa": 0,
+        "titulos_otros": 0,
+    }
 
 
 def generar_equipos():
@@ -121,11 +139,7 @@ def generar_equipos():
                 "nivel_cantera": max(1, min(5, int(reputacion / 20))),
                 "nivel_ojeadores": max(1, min(5, int(reputacion / 25))),
                 "nivel_medicina": max(1, min(5, int(reputacion / 20))),
-                "historia": {
-                    "fundacion": random.randint(1880, 1980),
-                    "titulos_liga": max(0, int((reputacion - 70) / 5)) if reputacion >= 70 else 0,
-                    "titulos_copa": max(0, int((reputacion - 65) / 7)) if reputacion >= 65 else 0,
-                },
+                "historia": _historia_para(eid, reputacion),
             })
     print(f"     Total equipos: {len(equipos)}")
     return equipos
@@ -302,8 +316,26 @@ def main():
 
     todos_jugadores = jugadores_senior + juveniles + agentes_libres
 
-    # Historial H2H
-    h2h = generar_h2h(TODOS_EQUIPOS_POR_LIGA, LIGAS_CONFIG)
+    # Historial H2H real (football-data.co.uk)
+    print("\n[H2H] Descargando resultados históricos reales...")
+    h2h = descargar_h2h_real(verbose=True)
+
+    # Fusionar H2H de competiciones internacionales (Intercontinental + CWC)
+    print("[H2H] Fusionando resultados internacionales...")
+    h2h_int = generar_h2h_internacional()
+    for k, v in h2h_int.items():
+        if k not in h2h:
+            h2h[k] = v
+        else:
+            # Acumular estadísticas sobre el registro existente
+            rec = h2h[k]
+            rec["PJ"]   += v["PJ"]
+            rec["W_a"]  += v["W_a"]
+            rec["D"]    += v["D"]
+            rec["W_b"]  += v["W_b"]
+            rec["GF_a"] += v["GF_a"]
+            rec["GC_a"] += v["GC_a"]
+    print(f"[H2H] Total pares tras fusión: {len(h2h)}")
 
     print("\n[6/6] Guardando JSON + escudos SVG...")
     guardar_json(os.path.join(OUTPUT_DIR, "ligas.json"), ligas)
