@@ -66,9 +66,7 @@ var _tab_activa:    String = "despacho"
 var _formacion:     String = "4-3-3"
 var _titulares:     Array  = []   # [jugador_id x11]
 var _noticias:      Array  = []
-var _jug_sel_id:    int    = -1
 var _mercado_pos:   String = "TODOS"
-var _mercado_edad:  int    = 40
 var _mercado_valor: int    = 0
 var _confianza:     int    = 70
 var _sueldo_mgr:    int    = 0
@@ -769,8 +767,8 @@ func _refresh_tactica() -> void:
 	grid_roles.add_child(_mk_lbl(pat_j.get("nombre_corto", "(sin asignar)") as String, 12, true))
 
 func _build_campo_tactico() -> Control:
-	var pw: int = 380
-	var ph: int = 250
+	var pw: float = 380.0
+	var ph: float = 250.0
 
 	var outer := PanelContainer.new()
 	var sty := StyleBoxFlat.new()
@@ -1783,7 +1781,7 @@ func _iniciar_nueva_temporada() -> void:
 
 func _generar_noticias_semana(resultados: Array) -> void:
 	var liga: Dictionary = DB.ligas.get(_liga_id, {})
-	var nombre_liga: String = liga.get("nombre", "Liga") as String
+	var _nombre_liga: String = liga.get("nombre", "Liga") as String
 
 	# Goleada más llamativa
 	var max_goles: int = 0
@@ -2042,7 +2040,6 @@ func _calcular_confianza() -> int:
 		return 70
 	var pg: int = 0
 	var pe: int = 0
-	var pp: int = 0
 	for r in _hist:
 		var gl: int = r.get("goles_local", 0)
 		var gv: int = r.get("goles_visitante", 0)
@@ -2051,8 +2048,6 @@ func _calcular_confianza() -> int:
 			pe += 1
 		elif (es_local and gl > gv) or (not es_local and gv > gl):
 			pg += 1
-		else:
-			pp += 1
 	var puntos: float = float(pg * 3 + pe) / float(max(1, _hist.size()) * 3)
 	return int(clampf(40.0 + puntos * 60.0, 10.0, 100.0))
 
@@ -2205,10 +2200,10 @@ func _clear_body(key: String) -> void:
 	for c in vb.get_children():
 		c.queue_free()
 
-func _mk_lbl(texto: String, size: int, bold: bool = false) -> Label:
+func _mk_lbl(texto: String, font_size: int, bold: bool = false) -> Label:
 	var l := Label.new()
 	l.text = texto
-	l.add_theme_font_size_override("font_size", size)
+	l.add_theme_font_size_override("font_size", font_size)
 	if bold:
 		l.add_theme_color_override("font_color", C_TEXT)
 	else:

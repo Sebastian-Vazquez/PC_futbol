@@ -174,8 +174,8 @@ def generar_atributos(posicion: str, calidad: float, edad: int) -> dict:
     """
     perfil = PERFILES_POSICION.get(posicion, PERFILES_POSICION["MC"])
 
-    # Factor de calidad: entre 0.6 y 1.0 escala los atributos
-    factor = 0.55 + calidad * 0.45
+    # Factor de calidad: entre 0.60 y 1.15 escala los atributos
+    factor = 0.60 + calidad * 0.55
 
     # Factor de edad: jugadores muy jóvenes o muy mayores penalizados
     if edad < 20:
@@ -199,7 +199,7 @@ def generar_atributos(posicion: str, calidad: float, edad: int) -> dict:
 
 def generar_atributos_portero(calidad: float, edad: int) -> dict:
     perfil = PERFILES_POSICION["PO"]
-    factor = 0.55 + calidad * 0.45
+    factor = 0.60 + calidad * 0.55
     if edad > 32:
         factor *= 1.0 - (edad - 32) * 0.01  # Los porteros aguantan más
 

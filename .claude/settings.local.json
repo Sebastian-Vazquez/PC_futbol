@@ -7,7 +7,8 @@
       "Bash(node -e \":*)",
       "Bash(head -5 grep -n \"Ajax\\\\|Feyenoord\\\\|Porto.*FC\\\\|Benfica\" c:/Users/Cebol/OneDrive/Escritorio/PC_futbol_Sebita/scraper/data/teams_international.py)",
       "Bash(python -c \"from data.club_historia import HISTORIA_REAL; print\\(f''HISTORIA_REAL: {len\\(HISTORIA_REAL\\)} equipos''\\); ids = sorted\\(HISTORIA_REAL.keys\\(\\)\\); print\\(f''IDs: {ids[:5]}...{ids[-5:]}''\\)\")",
-      "Bash(python generators/h2h_internacional.py)"
+      "Bash(python generators/h2h_internacional.py)",
+      "Read(//c/Users/Cebol/AppData/Local/Temp/claude/c--Users-Cebol-OneDrive-Escritorio-PC-futbol-Sebita/e3133b69-13ec-4446-8188-04f38b3f6167/tasks/**)"
     ]
   }
 }

@@ -35,7 +35,7 @@ def generar_plantilla(equipo_id: int, pais_equipo: str, reputacion: int, id_inic
     """
     jugadores = []
     id_actual = id_inicio
-    calidad_base = (reputacion - 55) / 45.0  # 0.0 a 1.0
+    calidad_base = max(0.0, min(1.0, (reputacion - 20) / 75.0))  # 0.0 a 1.0
 
     for posicion, cantidad in PLANTILLA_TIPO:
         for i in range(cantidad):

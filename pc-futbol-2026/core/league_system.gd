@@ -46,7 +46,7 @@ func _cargar_h2h_historico() -> void:
 	var f := FileAccess.open(ruta, FileAccess.READ)
 	if f == null:
 		return
-	var parsed = JSON.parse_string(f.read_as_text())
+	var parsed = JSON.parse_string(f.get_as_text())
 	f.close()
 	if not parsed is Dictionary:
 		return
