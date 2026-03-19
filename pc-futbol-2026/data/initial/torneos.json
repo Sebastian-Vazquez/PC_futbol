@@ -109,34 +109,299 @@
     "nombre": "UEFA Champions League",
     "pais": "EUR",
     "tipo": "champions",
-    "participantes": "clasificados"
+    "participantes": "clasificados",
+    "cupos": 36,
+    "cupos_pais": {
+      "ESP": 4,
+      "ENG": 4,
+      "GER": 4,
+      "ITA": 4,
+      "FRA": 3,
+      "NED": 2,
+      "POR": 2,
+      "TUR": 2,
+      "BEL": 1,
+      "AUT": 2,
+      "SCO": 1,
+      "UKR": 2,
+      "CHE": 1,
+      "CZE": 1,
+      "SRB": 1,
+      "GRE": 1,
+      "DNK": 1,
+      "SWE": 1
+    }
   },
   {
     "id": 9002,
     "nombre": "UEFA Europa League",
     "pais": "EUR",
     "tipo": "europa_league",
-    "participantes": "clasificados"
+    "participantes": "clasificados",
+    "cupos": 36,
+    "cupos_pais": {
+      "ESP": 2,
+      "ENG": 2,
+      "GER": 2,
+      "ITA": 2,
+      "FRA": 2,
+      "NED": 2,
+      "POR": 2,
+      "TUR": 2,
+      "BEL": 2,
+      "AUT": 1,
+      "SCO": 2,
+      "UKR": 1,
+      "CHE": 1,
+      "CZE": 2,
+      "SRB": 1,
+      "GRE": 2,
+      "DNK": 1,
+      "SWE": 1
+    }
   },
   {
     "id": 9003,
     "nombre": "UEFA Conference League",
     "pais": "EUR",
     "tipo": "conference",
-    "participantes": "clasificados"
+    "participantes": "clasificados",
+    "cupos": 36,
+    "cupos_pais": {
+      "ESP": 1,
+      "ENG": 1,
+      "GER": 1,
+      "ITA": 1,
+      "FRA": 1,
+      "NED": 1,
+      "POR": 1,
+      "TUR": 1,
+      "BEL": 1,
+      "AUT": 1,
+      "SCO": 1,
+      "UKR": 1,
+      "CHE": 1,
+      "CZE": 1,
+      "SRB": 1,
+      "GRE": 1,
+      "DNK": 1,
+      "SWE": 1
+    }
+  },
+  {
+    "id": 9004,
+    "nombre": "UEFA Super Cup",
+    "pais": "EUR",
+    "tipo": "supercopa",
+    "participantes": "campeones_uefa"
   },
   {
     "id": 9101,
     "nombre": "Copa Libertadores",
     "pais": "SAM",
     "tipo": "libertadores",
-    "participantes": "clasificados"
+    "participantes": "clasificados",
+    "cupos": 32,
+    "cupos_pais": {
+      "ARG": 6,
+      "BRA": 8,
+      "URU": 3,
+      "CHL": 3,
+      "COL": 3,
+      "ECU": 2,
+      "PER": 2,
+      "BOL": 2,
+      "PAR": 2,
+      "VEN": 1
+    }
   },
   {
     "id": 9102,
     "nombre": "Copa Sudamericana",
     "pais": "SAM",
     "tipo": "sudamericana",
-    "participantes": "clasificados"
+    "participantes": "clasificados",
+    "cupos": 32,
+    "cupos_pais": {
+      "ARG": 5,
+      "BRA": 5,
+      "URU": 2,
+      "CHL": 2,
+      "COL": 2,
+      "ECU": 2,
+      "PER": 2,
+      "BOL": 2,
+      "PAR": 2,
+      "VEN": 2
+    }
+  },
+  {
+    "id": 9103,
+    "nombre": "Recopa Sudamericana",
+    "pais": "SAM",
+    "tipo": "supercopa",
+    "participantes": "campeones_sam"
+  },
+  {
+    "id": 9201,
+    "nombre": "CONCACAF Champions Cup",
+    "pais": "CONCACAF",
+    "tipo": "champions",
+    "participantes": "clasificados",
+    "cupos": 27,
+    "cupos_pais": {
+      "USA": 7,
+      "MEX": 7,
+      "CAN": 3,
+      "CRC": 1,
+      "HON": 1,
+      "JAM": 1,
+      "GTM": 1,
+      "SLV": 1,
+      "TRI": 1,
+      "PAN": 1
+    }
+  },
+  {
+    "id": 9202,
+    "nombre": "CONCACAF League",
+    "pais": "CONCACAF",
+    "tipo": "copa",
+    "participantes": "clasificados",
+    "cupos": 22
+  },
+  {
+    "id": 9301,
+    "nombre": "CAF Champions League",
+    "pais": "AFR",
+    "tipo": "champions",
+    "participantes": "clasificados",
+    "cupos": 16,
+    "cupos_pais": {
+      "EGY": 2,
+      "MAR": 2,
+      "RSA": 2,
+      "TUN": 2,
+      "NGA": 2,
+      "CMR": 1,
+      "SEN": 1,
+      "CIV": 1,
+      "GHA": 1
+    }
+  },
+  {
+    "id": 9302,
+    "nombre": "CAF Confederation Cup",
+    "pais": "AFR",
+    "tipo": "europa_league",
+    "participantes": "clasificados",
+    "cupos": 16
+  },
+  {
+    "id": 9303,
+    "nombre": "CAF Super Cup",
+    "pais": "AFR",
+    "tipo": "supercopa",
+    "participantes": "campeones_caf"
+  },
+  {
+    "id": 9401,
+    "nombre": "AFC Champions League Elite",
+    "pais": "ASI",
+    "tipo": "champions",
+    "participantes": "clasificados",
+    "cupos": 24,
+    "cupos_pais": {
+      "SAU": 4,
+      "JPN": 4,
+      "KOR": 4,
+      "UAE": 2,
+      "CHN": 2,
+      "IRN": 2,
+      "AUS": 2,
+      "IRQ": 2,
+      "UZB": 1,
+      "IDN": 1
+    }
+  },
+  {
+    "id": 9402,
+    "nombre": "AFC Champions League Two",
+    "pais": "ASI",
+    "tipo": "europa_league",
+    "participantes": "clasificados",
+    "cupos": 24
+  },
+  {
+    "id": 9501,
+    "nombre": "FIFA Club World Cup",
+    "pais": "FIFA",
+    "tipo": "mundial_clubes",
+    "participantes": "clasificados",
+    "cupos": 32,
+    "cupos_confederacion": {
+      "UEFA": 12,
+      "CONMEBOL": 6,
+      "CONCACAF": 4,
+      "AFC": 4,
+      "CAF": 4,
+      "OFC": 1,
+      "HOST": 1
+    }
+  },
+  {
+    "id": 9502,
+    "nombre": "FIFA Intercontinental Cup",
+    "pais": "FIFA",
+    "tipo": "intercontinental",
+    "participantes": "campeones"
+  },
+  {
+    "id": 9601,
+    "nombre": "UEFA Euro",
+    "pais": "EUR",
+    "tipo": "selecciones",
+    "participantes": "selecciones_uefa",
+    "cupos": 24
+  },
+  {
+    "id": 9602,
+    "nombre": "Copa America",
+    "pais": "SAM",
+    "tipo": "selecciones",
+    "participantes": "selecciones_conmebol",
+    "cupos": 16
+  },
+  {
+    "id": 9603,
+    "nombre": "FIFA World Cup",
+    "pais": "FIFA",
+    "tipo": "selecciones",
+    "participantes": "clasificadas",
+    "cupos": 48
+  },
+  {
+    "id": 9604,
+    "nombre": "CONCACAF Gold Cup",
+    "pais": "CONCACAF",
+    "tipo": "selecciones",
+    "participantes": "clasificadas",
+    "cupos": 16
+  },
+  {
+    "id": 9605,
+    "nombre": "Africa Cup of Nations",
+    "pais": "AFR",
+    "tipo": "selecciones",
+    "participantes": "clasificadas",
+    "cupos": 24
+  },
+  {
+    "id": 9606,
+    "nombre": "AFC Asian Cup",
+    "pais": "ASI",
+    "tipo": "selecciones",
+    "participantes": "clasificadas",
+    "cupos": 24
   }
 ]

@@ -6,6 +6,9 @@ extends Node
 # Estado de todas las ligas activas
 # { liga_id: { "config": {...}, "equipos": [...], "calendario": [...], "clasificacion": [...], "jornada": int } }
 var _ligas: Dictionary = {}
+# Historial cara a cara — persiste entre temporadas
+# Clave: "minId_maxId"  |  Valor: { id_a, id_b, PJ, W_a, D, W_b, GF_a, GC_a }
+var _h2h: Dictionary = {}
 
 signal jornada_completada(liga_id: int, jornada: int, resultados: Array)
 signal liga_finalizada(liga_id: int, clasificacion: Array)
@@ -19,6 +22,7 @@ func _ready() -> void:
 
 func inicializar_todas_las_ligas() -> void:
 	_ligas.clear()
+	_cargar_h2h_historico()
 	for liga_data in DB.ligas.values():
 		var lid: int = liga_data.get("id", 0)
 		var equipos_ids = _obtener_equipos_de_liga(lid)
@@ -33,6 +37,25 @@ func inicializar_todas_las_ligas() -> void:
 			"finalizada": false,
 		}
 	print("[LeagueSystem] %d ligas inicializadas" % _ligas.size())
+
+func _cargar_h2h_historico() -> void:
+	## Carga h2h.json si existe. No sobrescribe registros ya presentes.
+	var ruta := "res://data/initial/h2h.json"
+	if not FileAccess.file_exists(ruta):
+		return
+	var f := FileAccess.open(ruta, FileAccess.READ)
+	if f == null:
+		return
+	var parsed = JSON.parse_string(f.read_as_text())
+	f.close()
+	if not parsed is Dictionary:
+		return
+	var cargados := 0
+	for key in parsed:
+		if not _h2h.has(key):
+			_h2h[key] = parsed[key]
+			cargados += 1
+	print("[LeagueSystem] H2H histórico: %d pares cargados" % cargados)
 
 func _obtener_equipos_de_liga(liga_id: int) -> Array:
 	var ids: Array = []
@@ -115,6 +138,7 @@ func registrar_resultado(liga_id: int, resultado: Dictionary) -> void:
 
 	_actualizar_fila(liga["clasificacion"], lid, gl, gv)
 	_actualizar_fila(liga["clasificacion"], vid, gv, gl)
+	_registrar_h2h(lid, vid, gl, gv)
 
 func _actualizar_fila(tabla: Array, equipo_id: int, gf: int, gc: int) -> void:
 	for fila in tabla:
@@ -155,6 +179,9 @@ func simular_jornada(liga_id: int) -> Array:
 			resultados.append(res)
 
 	liga["jornada_actual"] += 1
+	# Detectar fin de temporada inmediatamente tras la última jornada
+	if liga["jornada_actual"] >= liga["calendario"].size():
+		_procesar_fin_temporada(liga_id)
 	jornada_completada.emit(liga_id, jornada_idx + 1, resultados)
 	return resultados
 
@@ -227,10 +254,86 @@ func obtener_max_goleadores(n: int = 10) -> Array:
 				var res = partido.get("resultado")
 				if res == null: continue
 				for g in res.get("goleadores", []):
-					var pid = g.get("id", 0)
+					var pid: int = int(g.get("jugador_id", g.get("id", 0)))
 					if pid == 0: continue
-					conteo[pid] = conteo.get(pid, {"id": pid, "nombre": g.get("nombre","?"), "goles": 0})
-					conteo[pid]["goles"] += 1
+					var pkey: String = str(pid)
+					if not conteo.has(pkey):
+						conteo[pkey] = {"id": pid, "nombre": g.get("nombre", "?"), "goles": 0}
+					conteo[pkey]["goles"] += 1
 	var lista = conteo.values()
-	lista.sort_custom(func(a, b): return a.goles > b.goles)
+	lista.sort_custom(func(a, b): return a.get("goles", 0) > b.get("goles", 0))
 	return lista.slice(0, n)
+
+# ─── H2H (cara a cara) — persiste entre temporadas ───────────────────────────
+
+func _h2h_key(a: int, b: int) -> String:
+	return "%d_%d" % [mini(a, b), maxi(a, b)]
+
+func _registrar_h2h(local_id: int, visit_id: int, gl: int, gv: int) -> void:
+	var key: String = _h2h_key(local_id, visit_id)
+	if not _h2h.has(key):
+		_h2h[key] = {
+			"id_a": mini(local_id, visit_id),
+			"id_b": maxi(local_id, visit_id),
+			"PJ": 0, "W_a": 0, "D": 0, "W_b": 0, "GF_a": 0, "GC_a": 0,
+		}
+	var rec: Dictionary = _h2h[key]
+	rec["PJ"] += 1
+	var id_a: int = rec["id_a"]
+	var ga: int = gl if local_id == id_a else gv
+	var gb: int = gv if local_id == id_a else gl
+	rec["GF_a"] += ga
+	rec["GC_a"] += gb
+	if   ga > gb: rec["W_a"] += 1
+	elif ga < gb: rec["W_b"] += 1
+	else:         rec["D"]   += 1
+
+func obtener_h2h(id_a: int, id_b: int) -> Dictionary:
+	## Devuelve el historial desde la perspectiva de id_a.
+	var key: String = _h2h_key(id_a, id_b)
+	if not _h2h.has(key):
+		return {"PJ": 0, "W": 0, "D": 0, "L": 0, "GF": 0, "GC": 0}
+	var rec: Dictionary = _h2h[key]
+	var base_a: int = rec["id_a"]
+	if id_a == base_a:
+		return {"PJ": rec["PJ"], "W": rec["W_a"], "D": rec["D"], "L": rec["W_b"],
+			"GF": rec["GF_a"], "GC": rec["GC_a"]}
+	else:
+		return {"PJ": rec["PJ"], "W": rec["W_b"], "D": rec["D"], "L": rec["W_a"],
+			"GF": rec["GC_a"], "GC": rec["GF_a"]}
+
+# ─── Multi-temporada ──────────────────────────────────────────────────────────
+
+func iniciar_nueva_temporada(liga_id: int, nuevos_equipos: Array = []) -> void:
+	## Reinicia la liga manteniendo el historial H2H.
+	## nuevos_equipos: si hay ascensos/descensos, pasar la lista actualizada.
+	if not _ligas.has(liga_id): return
+	var equipos_ids: Array = nuevos_equipos if not nuevos_equipos.is_empty() \
+		else _ligas[liga_id]["equipos"]
+	_ligas[liga_id] = {
+		"config":       _ligas[liga_id]["config"],
+		"equipos":      equipos_ids,
+		"calendario":   _generar_calendario_rr(equipos_ids),
+		"clasificacion": _clasificacion_inicial(equipos_ids),
+		"jornada_actual": 0,
+		"finalizada":   false,
+	}
+	print("[LeagueSystem] Nueva temporada iniciada para liga %d" % liga_id)
+
+func obtener_resumen_temporada(liga_id: int) -> Dictionary:
+	## Devuelve campeón, descensos y tabla final. Llamar cuando finalizada=true.
+	if not _ligas.has(liga_id): return {}
+	var liga: Dictionary = _ligas[liga_id]
+	var tabla: Array = obtener_clasificacion(liga_id)
+	var config: Dictionary = liga["config"]
+	var n_des: int = config.get("descensos", 3)
+	var n: int = tabla.size()
+	var descendidos: Array = tabla.slice(maxi(0, n - n_des), n) if n > 0 else []
+	return {
+		"tabla":        tabla,
+		"campeon":      tabla[0] if n > 0 else {},
+		"subcampeon":   tabla[1] if n > 1 else {},
+		"descendidos":  descendidos,
+		"n_descensos":  n_des,
+		"finalizada":   liga.get("finalizada", false),
+	}

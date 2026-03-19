@@ -22,6 +22,7 @@ from data.teams_international import INTERNATIONAL
 from generators.players import generar_plantilla
 from generators.youth import generar_todas_las_canteras
 from generators.badges import generar_todos_los_escudos
+from generators.h2h import generar_h2h
 
 random.seed(42)
 
@@ -101,16 +102,17 @@ def generar_equipos():
                     "coste_mantenimiento_semanal": max(500, int(reputacion * 1500 * factor)),
                 },
                 "finanzas": {
-                    "presupuesto_fichajes": max(10_000, int(base * reputacion * 3_000)),
-                    "balance": max(10_000, int(base * reputacion * 5_000)),
+                    # base = 1_000_000 * factor; multiplicadores calibrados para valores reales
+                    "presupuesto_fichajes": max(10_000, int(base * reputacion * 2.0)),
+                    "balance":              max(10_000, int(base * reputacion * 1.5)),
                     "deuda": 0,
-                    "masa_salarial_semanal": max(1_000, int(base * reputacion * 100)),
-                    "ingresos_tv_anual": max(5_000, int(base * reputacion * 600)),
-                    "sponsor_camiseta": max(1_000, int(base * reputacion * 200)),
-                    "sponsor_estadio": max(500, int(base * reputacion * 80)),
-                    "merchandising_anual": max(1_000, int(base * reputacion * 150)),
-                    "precio_entrada_base": max(5, int(reputacion * 0.5 * (1 + factor))),
-                    "socios": max(100, int(reputacion * 300 * factor * random.uniform(0.5, 1.5))),
+                    "masa_salarial_semanal":max(1_000,  int(base * reputacion * 0.03)),
+                    "ingresos_tv_anual":    max(5_000,  int(base * reputacion * 1.5)),
+                    "sponsor_camiseta":     max(1_000,  int(base * reputacion * 0.5)),
+                    "sponsor_estadio":      max(500,    int(base * reputacion * 0.15)),
+                    "merchandising_anual":  max(1_000,  int(base * reputacion * 0.8)),
+                    "precio_entrada_base":  max(5,      int(reputacion * 0.5 * (1 + factor))),
+                    "socios":               max(100,    int(reputacion * 300 * factor * random.uniform(0.5, 1.5))),
                 },
                 "tactica_default": random.choice(["4-3-3", "4-4-2", "4-2-3-1", "3-5-2", "5-3-2", "4-1-4-1"]),
                 "color_principal": color1,
@@ -157,6 +159,47 @@ def generar_juveniles(equipos, id_inicio):
     juveniles = generar_todas_las_canteras(equipos, LIGAS_CONFIG, id_inicio)
     print(f"     Total juveniles: {len(juveniles)}")
     return juveniles
+
+
+def generar_agentes_libres(id_inicio):
+    """
+    Genera ~400 jugadores sin equipo (equipo_id = -1).
+    Divididos en 3 grupos de calidad:
+      - Veteranos retirados de equipos top (rep 88-95 → calidad alta pero con edad)
+      - Jugadores mid (rep 70-80)
+      - Jóvenes sin contrato (rep 60-70)
+    """
+    print("\n[3b] Generando agentes libres...")
+    todos = []
+    id_actual = id_inicio
+
+    # (reputacion_ficticia, cantidad_plantillas, paises_pool)
+    grupos = [
+        (92, 4, ["ESP", "ENG", "BRA", "ARG", "FRA", "GER", "ITA", "POR"]),   # ~104 jugadores top
+        (75, 6, ["ESP", "ENG", "GER", "FRA", "ITA", "NED", "POR", "BEL",
+                 "TUR", "ARG", "BRA", "URU", "COL"]),                          # ~156 mid
+        (63, 6, ["ESP", "ENG", "GER", "FRA", "ITA", "ARG", "BRA", "MEX",
+                 "SAU", "JPN", "KOR", "EGY", "MAR", "RSA", "NGA"]),            # ~156 low
+    ]
+
+    for rep, n_plantillas, paises in grupos:
+        for _ in range(n_plantillas):
+            pais = random.choice(paises)
+            plantilla = generar_plantilla(
+                equipo_id=-1,
+                pais_equipo=pais,
+                reputacion=rep + random.randint(-5, 5),
+                id_inicio=id_actual
+            )
+            # Marcar como agente libre
+            for j in plantilla:
+                j["equipo_id"] = -1
+                j["es_agente_libre"] = True
+            todos.extend(plantilla)
+            id_actual += len(plantilla)
+
+    print(f"     Total agentes libres: {len(todos)}")
+    return todos
 
 
 def generar_paises():
@@ -253,9 +296,14 @@ def main():
     equipos = generar_equipos()
     jugadores_senior, proximo_id = generar_jugadores(equipos)
     juveniles = generar_juveniles(equipos, proximo_id)
+    proximo_id += len(juveniles)
+    agentes_libres = generar_agentes_libres(proximo_id)
     paises = generar_paises()
 
-    todos_jugadores = jugadores_senior + juveniles
+    todos_jugadores = jugadores_senior + juveniles + agentes_libres
+
+    # Historial H2H
+    h2h = generar_h2h(TODOS_EQUIPOS_POR_LIGA, LIGAS_CONFIG)
 
     print("\n[6/6] Guardando JSON + escudos SVG...")
     guardar_json(os.path.join(OUTPUT_DIR, "ligas.json"), ligas)
@@ -263,6 +311,7 @@ def main():
     guardar_json(os.path.join(OUTPUT_DIR, "jugadores.json"), todos_jugadores)
     guardar_json(os.path.join(OUTPUT_DIR, "paises.json"), paises)
     guardar_json(os.path.join(OUTPUT_DIR, "torneos.json"), TORNEOS)
+    guardar_json(os.path.join(OUTPUT_DIR, "h2h.json"), h2h)
 
     # Generar escudos SVG
     generar_todos_los_escudos(equipos, OUTPUT_DIR)
@@ -270,7 +319,7 @@ def main():
     total = len(todos_jugadores)
     print("\n" + "=" * 55)
     print(f"  DONE -- {len(ligas)} ligas | {len(equipos)} equipos | {total} jugadores")
-    print(f"  ({len(jugadores_senior)} senior + {len(juveniles)} juveniles)")
+    print(f"  ({len(jugadores_senior)} senior + {len(juveniles)} juveniles + {len(agentes_libres)} libres)")
     print("=" * 55)
 
 

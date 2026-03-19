@@ -1,0 +1,28 @@
+FONDOS POR PESTAÑA — PC Fútbol 2026
+=====================================
+
+Coloca aquí las imágenes de fondo para cada pestaña del juego.
+El código las carga automáticamente por nombre de archivo.
+
+NOMBRES ESPERADOS (cualquier formato: .png, .jpg, .webp):
+  despacho.png        — Fondo del Despacho del mánager
+  plantilla.png       — Fondo de Plantilla
+  tactica.png         — Fondo de Tácticas
+  mercado.png         — Fondo del Mercado de fichajes
+  finanzas.png        — Fondo de Finanzas
+  clasificacion.png   — Fondo de Clasificación
+  calendario.png      — Fondo de Calendario
+
+RECOMENDACIONES:
+  - Resolución mínima: 1280×720 px
+  - Formato preferido: .png o .jpg (no .svg)
+  - Las imágenes se mostrarán con opacidad reducida (~15-25%) como fondo
+    decorativo detrás del contenido de la pestaña.
+  - Temática sugerida:
+      despacho     → escritorio/oficina/estadio desde arriba
+      plantilla    → vestuario / jugadores entrenando
+      tactica      → pizarrón táctico / campo cenital
+      mercado      → sala de prensa / negociación
+      finanzas     → sala de juntas / ciudad con estadio
+      clasificacion → estadio lleno / trofeo
+      calendario   → campo con luz de tarde / partidos en acción

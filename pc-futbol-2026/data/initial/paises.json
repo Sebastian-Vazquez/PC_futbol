@@ -2,126 +2,427 @@
   {
     "id": "ESP",
     "nombre": "Espana",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "ENG",
     "nombre": "Inglaterra",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "GER",
     "nombre": "Alemania",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "FRA",
     "nombre": "Francia",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "ITA",
     "nombre": "Italia",
-    "continente": "Europa"
-  },
-  {
-    "id": "ARG",
-    "nombre": "Argentina",
-    "continente": "Sudamerica"
-  },
-  {
-    "id": "BRA",
-    "nombre": "Brasil",
-    "continente": "Sudamerica"
-  },
-  {
-    "id": "MEX",
-    "nombre": "Mexico",
-    "continente": "CONCACAF"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "NED",
     "nombre": "Paises Bajos",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "POR",
     "nombre": "Portugal",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "BEL",
     "nombre": "Belgica",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "SEN",
-    "nombre": "Senegal",
-    "continente": "Africa"
+    "id": "TUR",
+    "nombre": "Turquia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "CMR",
-    "nombre": "Camerun",
-    "continente": "Africa"
+    "id": "AUT",
+    "nombre": "Austria",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "CIV",
-    "nombre": "Costa de Marfil",
-    "continente": "Africa"
+    "id": "SCO",
+    "nombre": "Escocia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "COL",
-    "nombre": "Colombia",
-    "continente": "Sudamerica"
+    "id": "UKR",
+    "nombre": "Ucrania",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "URU",
-    "nombre": "Uruguay",
-    "continente": "Sudamerica"
+    "id": "CHE",
+    "nombre": "Suiza",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "CZE",
+    "nombre": "Republica Checa",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "SRB",
+    "nombre": "Serbia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "GRE",
+    "nombre": "Grecia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "DNK",
+    "nombre": "Dinamarca",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "SWE",
+    "nombre": "Suecia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "NOR",
+    "nombre": "Noruega",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
     "id": "CRO",
     "nombre": "Croacia",
-    "continente": "Europa"
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "MAR",
-    "nombre": "Marruecos",
-    "continente": "Africa"
+    "id": "POL",
+    "nombre": "Polonia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "USA",
-    "nombre": "Estados Unidos",
-    "continente": "CONCACAF"
+    "id": "ROU",
+    "nombre": "Rumania",
+    "continente": "Europa",
+    "confederacion": "UEFA"
   },
   {
-    "id": "JPN",
-    "nombre": "Japon",
-    "continente": "Asia"
+    "id": "SVN",
+    "nombre": "Eslovenia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "SVK",
+    "nombre": "Eslovaquia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "HUN",
+    "nombre": "Hungria",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "ALB",
+    "nombre": "Albania",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "GEO",
+    "nombre": "Georgia",
+    "continente": "Europa",
+    "confederacion": "UEFA"
+  },
+  {
+    "id": "ARG",
+    "nombre": "Argentina",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "BRA",
+    "nombre": "Brasil",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "URU",
+    "nombre": "Uruguay",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
   },
   {
     "id": "CHL",
     "nombre": "Chile",
-    "continente": "Sudamerica"
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
   },
   {
-    "id": "PAR",
-    "nombre": "Paraguay",
-    "continente": "Sudamerica"
-  },
-  {
-    "id": "BOL",
-    "nombre": "Bolivia",
-    "continente": "Sudamerica"
-  },
-  {
-    "id": "PER",
-    "nombre": "Peru",
-    "continente": "Sudamerica"
+    "id": "COL",
+    "nombre": "Colombia",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
   },
   {
     "id": "ECU",
     "nombre": "Ecuador",
-    "continente": "Sudamerica"
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "PER",
+    "nombre": "Peru",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "BOL",
+    "nombre": "Bolivia",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "PAR",
+    "nombre": "Paraguay",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "VEN",
+    "nombre": "Venezuela",
+    "continente": "Sudamerica",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "id": "USA",
+    "nombre": "Estados Unidos",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "MEX",
+    "nombre": "Mexico",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "CAN",
+    "nombre": "Canada",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "CRC",
+    "nombre": "Costa Rica",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "HON",
+    "nombre": "Honduras",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "JAM",
+    "nombre": "Jamaica",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "GTM",
+    "nombre": "Guatemala",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "SLV",
+    "nombre": "El Salvador",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "TRI",
+    "nombre": "Trinidad y Tobago",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "PAN",
+    "nombre": "Panama",
+    "continente": "CONCACAF",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "id": "SAU",
+    "nombre": "Arabia Saudita",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "JPN",
+    "nombre": "Japon",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "KOR",
+    "nombre": "Corea del Sur",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "UAE",
+    "nombre": "Emiratos Arabes",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "AUS",
+    "nombre": "Australia",
+    "continente": "Oceania",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "CHN",
+    "nombre": "China",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "IRN",
+    "nombre": "Iran",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "IRQ",
+    "nombre": "Irak",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "UZB",
+    "nombre": "Uzbekistan",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "IDN",
+    "nombre": "Indonesia",
+    "continente": "Asia",
+    "confederacion": "AFC"
+  },
+  {
+    "id": "EGY",
+    "nombre": "Egipto",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "MAR",
+    "nombre": "Marruecos",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "RSA",
+    "nombre": "Sudafrica",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "TUN",
+    "nombre": "Tunez",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "NGA",
+    "nombre": "Nigeria",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "SEN",
+    "nombre": "Senegal",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "CMR",
+    "nombre": "Camerun",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "CIV",
+    "nombre": "Costa de Marfil",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "GHA",
+    "nombre": "Ghana",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "ALG",
+    "nombre": "Argelia",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "MLI",
+    "nombre": "Mali",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "KEN",
+    "nombre": "Kenya",
+    "continente": "Africa",
+    "confederacion": "CAF"
+  },
+  {
+    "id": "NZL",
+    "nombre": "Nueva Zelanda",
+    "continente": "Oceania",
+    "confederacion": "OFC"
+  },
+  {
+    "id": "FIJ",
+    "nombre": "Fiji",
+    "continente": "Oceania",
+    "confederacion": "OFC"
   }
 ]

@@ -1,94 +1,132 @@
 extends Node
 
-## Escena de debug — Fase 3
-## Prueba: simulacion de partidos + liga completa
+## Escena de debug — Fase 4
+## Prueba: economia + mercado de fichajes
 
 func _ready() -> void:
 	print("=".repeat(50))
-	print("  PC FUTBOL 2026 -- FASE 3")
+	print("  PC FUTBOL 2026 -- FASE 4")
 	print("=".repeat(50))
 
-	# Cargar datos
 	DB.cargar_todo()
-	print("Datos cargados: %d jugadores | %d equipos | %d ligas" % [
+	print("Datos: %d jugadores | %d equipos | %d ligas" % [
 		DB.jugadores.size(), DB.equipos.size(), DB.ligas.size()
 	])
 
 	if DB.equipos.size() < 2:
-		print("ERROR: No hay suficientes equipos. Ejecuta el scraper Python primero.")
+		print("ERROR: Sin equipos. Ejecuta el scraper primero.")
 		return
 
-	# ── Test 1: Partido individual ──────────────────────────────────────────
-	print("\n--- TEST 1: Partido individual ---")
-	var equipos_laliga = DB.equipos_por_liga.get(1, [])
-	if equipos_laliga.size() >= 2:
-		var id1 = equipos_laliga[0]
-		var id2 = equipos_laliga[1]
-		var eq1 = DB.obtener_equipo(id1)
-		var eq2 = DB.obtener_equipo(id2)
-		print("Simulando: %s vs %s" % [eq1.get("nombre_corto","?"), eq2.get("nombre_corto","?")])
-		var res = MatchSim.simular(id1, id2)
-		print("Resultado: %d - %d" % [res.get("goles_local",0), res.get("goles_visitante",0)])
-		print("Posesion: %d%% - %d%%" % [res.get("posesion",[50,50])[0], res.get("posesion",[50,50])[1]])
-		print("Disparos: %s - %s" % [str(res.get("disparos",[0,0])[0]), str(res.get("disparos",[0,0])[1])])
-		if res.get("goleadores", []).size() > 0:
-			print("Goleadores:")
-			for g in res.get("goleadores", []):
-				print("  Min %d: %s" % [g.get("minuto",0), g.get("nombre","?")])
-	else:
-		print("No hay equipos en LaLiga (liga_id=1). Verificar datos.")
+	# ── Test 1: Economía semanal ────────────────────────────────────────────
+	print("\n--- TEST 1: Economia semanal ---")
+	CalendarSystem.iniciar_temporada(2026)
 
-	# ── Test 2: Temporada LaLiga completa ───────────────────────────────────
-	print("\n--- TEST 2: Temporada LaLiga completa ---")
-	var liga_test_id = 1  # LaLiga
-	if not DB.ligas.has(liga_test_id):
-		# Buscar primera liga disponible
-		if not DB.ligas.is_empty():
-			liga_test_id = int(DB.ligas.keys()[0])
+	# Simular 4 semanas de finanzas
+	for sem in range(1, 5):
+		EconomySystem.procesar_semana(sem)
 
-	LeagueSystem.inicializar_todas_las_ligas()
+	# Mostrar top 8 clubes más ricos
+	var top = EconomySystem.top_ricos(8)
+	print("TOP 8 CLUBES MAS RICOS (tras 4 semanas):")
+	print("%-3s %-20s %15s" % ["Pos", "Club", "Balance"])
+	print("-".repeat(40))
+	for i in range(top.size()):
+		var entry = top[i]
+		print("%-3d %-20s %15s" % [
+			i + 1,
+			entry.nombre,
+			_fmt_dinero(entry.balance)
+		])
 
-	var n_jornadas = LeagueSystem.obtener_num_jornadas(liga_test_id)
-	print("Liga ID %d: %d jornadas" % [liga_test_id, n_jornadas])
+	# Informe detallado Real Madrid
+	var eq_laliga = DB.equipos_por_liga.get(1, [])
+	if eq_laliga.size() > 0:
+		var rm_id: int = eq_laliga[0]
+		var informe = EconomySystem.obtener_informe(rm_id)
+		print("\nINFORME FINANCIERO — %s:" % informe.get("nombre", "?"))
+		print("  Balance:            %s" % _fmt_dinero(informe.get("balance", 0)))
+		print("  Deuda:              %s" % _fmt_dinero(informe.get("deuda", 0)))
+		print("  Presup. fichajes:   %s" % _fmt_dinero(informe.get("presupuesto_fichajes", 0)))
+		print("  Masa salarial/sem:  %s" % _fmt_dinero(informe.get("masa_salarial_semanal", 0)))
+		print("  TV anual:           %s" % _fmt_dinero(informe.get("ingresos_tv_anual", 0)))
+		print("  Ingreso por partido:%s" % _fmt_dinero(informe.get("ingreso_partido", 0)))
+		print("  Ratio salarios:     %.1f%%" % EconomySystem.porcentaje_salarios_sobre_ingresos(rm_id))
 
-	if n_jornadas > 0:
-		var t_inicio = Time.get_ticks_msec()
-		LeagueSystem.simular_temporada_completa(liga_test_id)
-		var t_fin = Time.get_ticks_msec()
-		print("Temporada simulada en %d ms" % (t_fin - t_inicio))
+	# ── Test 2: Mercado de fichajes IA ──────────────────────────────────────
+	print("\n--- TEST 2: Mercado de fichajes (IA) ---")
+	# Activar ventana de mercado verano (julio)
+	CalendarSystem.dia = 15
+	CalendarSystem.mes = 7
+	CalendarSystem.anio = 2026
+	print("Mercado abierto: %s" % str(TransferMarket.esta_abierto()))
 
-		# Clasificacion final
-		var tabla = LeagueSystem.obtener_clasificacion(liga_test_id)
-		print("\nCLASIFICACION FINAL:")
-		print("%-3s %-20s %3s %3s %3s %3s %4s %4s %4s %4s" % ["Pos", "Equipo", "PJ", "PG", "PE", "PP", "GF", "GC", "GD", "Pts"])
-		print("-".repeat(60))
-		for i in range(mini(tabla.size(), 20)):
-			var fila = tabla[i]
-			var eq   = DB.obtener_equipo(fila.equipo_id)
-			var nc   = eq.get("nombre_corto", "???")
-			print("%-3d %-20s %3d %3d %3d %3d %4d %4d %4d %4d" % [
-				i + 1, nc,
-				fila.PJ, fila.PG, fila.PE, fila.PP,
-				fila.GF, fila.GC, fila.GD, fila.Pts
+	var completados = TransferMarket.simular_actividad_mercado_ia(15)
+	print("Traspasos IA completados: %d" % completados)
+
+	var historial = TransferMarket.obtener_historial()
+	if historial.size() > 0:
+		print("\nTRASPASOS REALIZADOS:")
+		print("%-20s %5s %15s  %-18s -> %-18s" % ["Jugador", "Med", "Precio", "Origen", "Destino"])
+		print("-".repeat(80))
+		for t in historial:
+			var orig_eq = DB.obtener_equipo(t.get("origen", 0))
+			var dest_eq = DB.obtener_equipo(t.get("destino", 0))
+			print("%-20s %5d %15s  %-18s -> %-18s" % [
+				t.get("nombre", "?"),
+				t.get("media", 0),
+				_fmt_dinero(t.get("cantidad", 0)),
+				orig_eq.get("nombre_corto", "?"),
+				dest_eq.get("nombre_corto", "?"),
 			])
-
-		# Goleadores
-		print("\nMAXIMOS GOLEADORES (LaLiga):")
-		var goleadores = LeagueSystem.obtener_max_goleadores(5)
-		for i in range(goleadores.size()):
-			var g = goleadores[i]
-			print("  %d. %s — %d goles" % [i+1, g.get("nombre","?"), g.get("goles",0)])
 	else:
-		print("No se pudo inicializar la liga. Verificar equipos.")
+		print("(Sin traspasos — los clubes no tienen presupuesto suficiente este periodo)")
 
-	# ── Test 3: Simular TODAS las ligas ─────────────────────────────────────
-	print("\n--- TEST 3: Todas las ligas ---")
-	var t2 = Time.get_ticks_msec()
-	LeagueSystem.inicializar_todas_las_ligas()
-	LeagueSystem.simular_todas_las_ligas()
-	var t3 = Time.get_ticks_msec()
-	print("Todas las ligas simuladas en %d ms" % (t3 - t2))
+	# ── Test 3: Fichar agente libre manualmente ─────────────────────────────
+	print("\n--- TEST 3: Fichar agente libre ---")
+	var libres = DB.obtener_agentes_libres({})
+	if libres.size() > 0:
+		var candidato = libres[0]
+		var jid: int = int(candidato.get("id", 0))
+		var dest_id: int = eq_laliga[0] if eq_laliga.size() > 0 else 1001
+		var ok = TransferMarket.fichar_agente_libre(jid, dest_id)
+		var dest_eq = DB.obtener_equipo(dest_id)
+		print("Agente libre '%s' fichado por %s: %s" % [
+			candidato.get("nombre_corto", "?"),
+			dest_eq.get("nombre_corto", "?"),
+			"OK" if ok else "FALLO"
+		])
+	else:
+		print("No hay agentes libres disponibles")
+
+	# ── Test 4: Renovación de contrato ──────────────────────────────────────
+	print("\n--- TEST 4: Renovacion de contrato ---")
+	if eq_laliga.size() > 0:
+		var equipo_id: int = eq_laliga[0]
+		var plantilla = DB.obtener_plantilla(equipo_id)
+		if plantilla.size() > 0:
+			var jugador = plantilla[0]
+			var jid: int = int(jugador.get("id", 0))
+			var sal_nuevo: int = int(jugador.get("contrato", {}).get("salario_semanal", 1000) * 1.15)
+			var ok = TransferMarket.renovar_contrato(jid, equipo_id, sal_nuevo, 3)
+			print("Renovacion de %s (+15%% salario): %s" % [
+				jugador.get("nombre_corto", "?"),
+				"OK" if ok else "FALLO"
+			])
+			var jugador_upd = DB.obtener_jugador(jid)
+			print("  Nuevo salario: %s/semana" % _fmt_dinero(jugador_upd.get("contrato", {}).get("salario_semanal", 0)))
+			print("  Fin contrato:  %s" % jugador_upd.get("contrato", {}).get("fin_contrato", "?"))
 
 	print("\n" + "=".repeat(50))
-	print("  FASE 3 COMPLETADA")
+	print("  FASE 4 COMPLETADA")
 	print("=".repeat(50))
+
+# ─── Helpers ──────────────────────────────────────────────────────────────────
+
+func _fmt_dinero(cantidad: int) -> String:
+	if cantidad >= 1_000_000_000:
+		return "%.2fB" % (float(cantidad) / 1_000_000_000.0)
+	if cantidad >= 1_000_000:
+		return "%.2fM" % (float(cantidad) / 1_000_000.0)
+	if cantidad >= 1_000:
+		return "%.1fK" % (float(cantidad) / 1_000.0)
+	return str(cantidad)
