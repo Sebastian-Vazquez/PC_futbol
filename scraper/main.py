@@ -8,6 +8,7 @@ import json
 import os
 import random
 import sys
+from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(__file__))
 
@@ -24,6 +25,11 @@ from generators.youth import generar_todas_las_canteras
 from generators.badges import generar_todos_los_escudos
 from generators.h2h_real import descargar_h2h_real
 from generators.h2h_internacional import generar_h2h_internacional
+from generators.real_squads import obtener_squad_real
+from generators.attributes import (
+    generar_atributos, generar_atributos_portero,
+    calcular_media, calcular_valor_mercado, POSICIONES_SECUNDARIAS, PIES,
+)
 from data.club_historia import HISTORIA_REAL
 
 random.seed(42)
@@ -145,26 +151,139 @@ def generar_equipos():
     return equipos
 
 
+def _jugador_desde_real(datos_tm: dict, equipo_id: int, id_jugador: int) -> dict:
+    """
+    Construye un jugador completo a partir de los datos reales de TM.
+    Usa nombre/apellido/fecha/nac/posicion reales; atributos generados según calidad.
+    """
+    posicion = datos_tm["posicion_principal"]
+    calidad  = datos_tm["calidad"]
+
+    # Edad desde fecha de nacimiento
+    try:
+        from datetime import date as _date
+        fnac = datetime.strptime(datos_tm["fecha_nacimiento"], "%Y-%m-%d").date()
+        hoy  = _date(2026, 1, 1)
+        edad = int((hoy - fnac).days / 365.25)
+        edad = max(16, min(45, edad))
+    except Exception:
+        edad = 25
+
+    attrs    = generar_atributos(posicion, calidad, edad)
+    attrs_po = generar_atributos_portero(calidad, edad) if posicion == "PO" else None
+
+    media = calcular_media(attrs_po if posicion == "PO" else attrs, posicion)
+    valor = calcular_valor_mercado(media, edad, posicion)
+
+    # Respetar valor real si es significativo
+    if datos_tm["valor_mercado_real"] > 0:
+        valor = datos_tm["valor_mercado_real"]
+
+    posiciones_sec = [p for p in POSICIONES_SECUNDARIAS.get(posicion, []) if random.random() < 0.4]
+    pie = PIES.get(posicion, "derecho")
+    if random.random() < 0.15:
+        pie = "izquierdo" if pie == "derecho" else "derecho"
+
+    salario_base = max(1_000, int(valor * random.uniform(0.004, 0.008)))
+    fin_contrato = f"{2026 + random.randint(0, 4)}-06-30"
+
+    from generators.players import _altura_por_posicion, _calcular_potencial
+    return {
+        "id":                    id_jugador,
+        "nombre":                datos_tm["nombre"],
+        "apellido":              datos_tm["apellido"],
+        "nombre_corto":          datos_tm["nombre_corto"],
+        "fecha_nacimiento":      datos_tm["fecha_nacimiento"],
+        "nacionalidad":          datos_tm["nacionalidad"],
+        "nacionalidad_secundaria": None,
+        "posicion_principal":    posicion,
+        "posiciones_secundarias": posiciones_sec,
+        "pie_habil":             pie,
+        "altura_cm":             _altura_por_posicion(posicion),
+        "peso_kg":               random.randint(65, 90),
+        "equipo_id":             equipo_id,
+        "numero_camiseta":       0,
+        "atributos":             attrs,
+        "atributos_portero":     attrs_po,
+        "contrato": {
+            "salario_semanal":   salario_base,
+            "clausula":          int(valor * random.uniform(2.0, 5.0)) if media >= 75 else 0,
+            "fin_contrato":      fin_contrato,
+            "bonus_gol":         int(salario_base * 0.1) if posicion in ("DC", "ED", "EI", "MCO") else 0,
+            "bonus_asistencia":  int(salario_base * 0.05),
+        },
+        "valor_mercado":         valor,
+        "media":                 media,
+        "potencial":             _calcular_potencial(media, edad),
+        "moral":                 random.randint(60, 90),
+        "forma_fisica":          random.randint(65, 95),
+        "personalidad": {
+            "profesionalismo":   random.randint(50, 99),
+            "ambicion":          random.randint(50, 99),
+            "lealtad":           random.randint(30, 99),
+            "temperamento":      random.randint(30, 99),
+        },
+    }
+
+
+def _asignar_numeros_camiseta(jugadores: list) -> None:
+    """Reutiliza la lógica de asignación de números de players.py."""
+    from generators.players import _asignar_numeros
+    _asignar_numeros(jugadores)
+
+
 def generar_jugadores(equipos):
     print("\n[3/6] Generando jugadores senior...")
     todos = []
     id_actual = 10001
+    reales_count = 0
+    generados_count = 0
 
     pais_por_liga = {lid: cfg["pais"] for lid, cfg in LIGAS_CONFIG.items()}
 
     for equipo in equipos:
+        eid    = equipo["id"]
         liga_id = equipo.get("liga_id", 1)
-        pais = pais_por_liga.get(liga_id, equipo.get("pais", "ESP"))
+        pais   = pais_por_liga.get(liga_id, equipo.get("pais", "ESP"))
+
+        # Intentar obtener squad real de Transfermarkt
+        squad_real = None
+        try:
+            squad_real = obtener_squad_real(eid)
+        except Exception as e:
+            print(f"     [TM] Error obteniendo squad real para equipo {eid}: {e}")
+
+        if squad_real:
+            # Crear jugadores con nombres reales y atributos simulados según calidad
+            jugadores = []
+            for datos_tm in squad_real:
+                try:
+                    jugador = _jugador_desde_real(datos_tm, eid, id_actual)
+                    jugadores.append(jugador)
+                    id_actual += 1
+                except Exception as e:
+                    print(f"     [TM] Error procesando jugador {datos_tm.get('nombre_corto', '?')}: {e}")
+
+            # Asignar números de camiseta
+            if jugadores:
+                _asignar_numeros_camiseta(jugadores)
+                todos.extend(jugadores)
+                reales_count += len(jugadores)
+                continue
+
+        # Fallback: generacion aleatoria
         jugadores = generar_plantilla(
-            equipo_id=equipo["id"],
+            equipo_id=eid,
             pais_equipo=pais,
             reputacion=equipo["reputacion"],
             id_inicio=id_actual
         )
         todos.extend(jugadores)
+        generados_count += len(jugadores)
         id_actual += len(jugadores)
 
     print(f"     Total jugadores senior: {len(todos)}")
+    print(f"     Con nombres reales (TM): {reales_count} | Generados: {generados_count}")
     return todos, id_actual
 
 

@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Omar",
+    "apellido": "Marmoush",
+    "nombre_corto": "O. Marmoush",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "EGY",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 75000000,
+    "calidad": 0.92
+  },
+  {
+    "nombre": "Hugo",
+    "apellido": "Ekitiké",
+    "nombre_corto": "H. Ekitiké",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 75000000,
+    "calidad": 0.92
+  },
+  {
+    "nombre": "Hugo",
+    "apellido": "Larsson",
+    "nombre_corto": "H. Larsson",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "SWE",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 40000000,
+    "calidad": 0.85
+  },
+  {
+    "nombre": "Arthur",
+    "apellido": "Theate",
+    "nombre_corto": "A. Theate",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "BEL",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 24000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Nathaniel",
+    "apellido": "Brown",
+    "nombre_corto": "N. Brown",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 22000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Elye",
+    "apellido": "Wahi",
+    "nombre_corto": "E. Wahi",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "CIV",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 22000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Robin",
+    "apellido": "Koch",
+    "nombre_corto": "R. Koch",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 18000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Can",
+    "apellido": "Uzun",
+    "nombre_corto": "C. Uzun",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 18000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Jean-Mattéo",
+    "apellido": "Bahoya",
+    "nombre_corto": "J. Bahoya",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 17000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Tuta",
+    "apellido": "Tuta",
+    "nombre_corto": "T. Tuta",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 15000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Ansgar",
+    "apellido": "Knauff",
+    "nombre_corto": "A. Knauff",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 15000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Rasmus",
+    "apellido": "Kristensen",
+    "nombre_corto": "R. Kristensen",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "DNK",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 14000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Nnamdi",
+    "apellido": "Collins",
+    "nombre_corto": "N. Collins",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 10000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Farès",
+    "apellido": "Chaïbi",
+    "nombre_corto": "F. Chaïbi",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "ALG",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 9000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Aurèle",
+    "apellido": "Amenda",
+    "nombre_corto": "A. Amenda",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "CHE",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 7500000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Ellyes",
+    "apellido": "Skhiri",
+    "nombre_corto": "E. Skhiri",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "TUN",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 7500000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Oscar",
+    "apellido": "Højlund",
+    "nombre_corto": "O. Højlund",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "DNK",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 7500000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Junior",
+    "apellido": "Dina Ebimbe",
+    "nombre_corto": "J. Dina Ebimb",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "CMR",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Igor",
+    "apellido": "Matanovic",
+    "nombre_corto": "I. Matanovic",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Mario",
+    "apellido": "Götze",
+    "nombre_corto": "M. Götze",
+    "fecha_nacimiento": "1992-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 4000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Michy",
+    "apellido": "Batshuayi",
+    "nombre_corto": "M. Batshuayi",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "BEL",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 4000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Niels",
+    "apellido": "Nkounkou",
+    "nombre_corto": "N. Nkounkou",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Mahmoud",
+    "apellido": "Dahoud",
+    "nombre_corto": "M. Dahoud",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Kevin",
+    "apellido": "Trapp",
+    "nombre_corto": "K. Trapp",
+    "fecha_nacimiento": "1991-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Kauã",
+    "apellido": "Santos",
+    "nombre_corto": "K. Santos",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Krisztián",
+    "apellido": "Lisztes",
+    "nombre_corto": "K. Lisztes",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "HUN",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  }
+]

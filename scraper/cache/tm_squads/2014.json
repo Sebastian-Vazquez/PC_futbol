@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Eberechi",
+    "apellido": "Eze",
+    "nombre_corto": "E. Eze",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 55000000,
+    "calidad": 0.85
+  },
+  {
+    "nombre": "Marc",
+    "apellido": "Guéhi",
+    "nombre_corto": "M. Guéhi",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 45000000,
+    "calidad": 0.85
+  },
+  {
+    "nombre": "Adam",
+    "apellido": "Wharton",
+    "nombre_corto": "A. Wharton",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 45000000,
+    "calidad": 0.85
+  },
+  {
+    "nombre": "Jean-Philippe",
+    "apellido": "Mateta",
+    "nombre_corto": "J. Mateta",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 30000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Joachim",
+    "apellido": "Andersen",
+    "nombre_corto": "J. Andersen",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "DNK",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 27000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Trevoh",
+    "apellido": "Chalobah",
+    "nombre_corto": "T. Chalobah",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Maxence",
+    "apellido": "Lacroix",
+    "nombre_corto": "M. Lacroix",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Tyrick",
+    "apellido": "Mitchell",
+    "nombre_corto": "T. Mitchell",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Daniel",
+    "apellido": "Muñoz",
+    "nombre_corto": "D. Muñoz",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "COL",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Cheick",
+    "apellido": "Doucouré",
+    "nombre_corto": "C. Doucouré",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "MLI",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Ismaïla",
+    "apellido": "Sarr",
+    "nombre_corto": "I. Sarr",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "SEN",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Dean",
+    "apellido": "Henderson",
+    "nombre_corto": "D. Henderson",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 20000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Eddie",
+    "apellido": "Nketiah",
+    "nombre_corto": "E. Nketiah",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 18000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Chadi",
+    "apellido": "Riad",
+    "nombre_corto": "C. Riad",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "MAR",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 15000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Ben",
+    "apellido": "Chilwell",
+    "nombre_corto": "B. Chilwell",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 15000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Chris",
+    "apellido": "Richards",
+    "nombre_corto": "C. Richards",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "USA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 14000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Daichi",
+    "apellido": "Kamada",
+    "nombre_corto": "D. Kamada",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "JPN",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 12000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Romain",
+    "apellido": "Esse",
+    "nombre_corto": "R. Esse",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 12000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Jefferson",
+    "apellido": "Lerma",
+    "nombre_corto": "J. Lerma",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "COL",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 10000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Matheus",
+    "apellido": "França",
+    "nombre_corto": "M. França",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 10000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Odsonne",
+    "apellido": "Édouard",
+    "nombre_corto": "O. Édouard",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 8000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Will",
+    "apellido": "Hughes",
+    "nombre_corto": "W. Hughes",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 7000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Sam",
+    "apellido": "Johnstone",
+    "nombre_corto": "S. Johnstone",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Justin",
+    "apellido": "Devenny",
+    "nombre_corto": "J. Devenny",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "NIR",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Rob",
+    "apellido": "Holding",
+    "nombre_corto": "R. Holding",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Naouirou",
+    "apellido": "Ahamada",
+    "nombre_corto": "N. Ahamada",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Stipe",
+    "apellido": "Gizdic",
+    "nombre_corto": "S. Gizdic",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ante",
+    "apellido": "Zivalj",
+    "nombre_corto": "A. Zivalj",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Domagoj",
+    "apellido": "Saric",
+    "nombre_corto": "D. Saric",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Tomislav",
+    "apellido": "Pranjic",
+    "nombre_corto": "T. Pranjic",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Petar",
+    "apellido": "Ceko",
+    "nombre_corto": "P. Ceko",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Deni",
+    "apellido": "Djuras",
+    "nombre_corto": "D. Djuras",
+    "fecha_nacimiento": "1990-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ante",
+    "apellido": "Kunac",
+    "nombre_corto": "A. Kunac",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Martino",
+    "apellido": "Mikelic",
+    "nombre_corto": "M. Mikelic",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Lovre",
+    "apellido": "Mustapic",
+    "nombre_corto": "L. Mustapic",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ivan",
+    "apellido": "Repic",
+    "nombre_corto": "I. Repic",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Marko",
+    "apellido": "Milat",
+    "nombre_corto": "M. Milat",
+    "fecha_nacimiento": "1979-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Dino",
+    "apellido": "Barada",
+    "nombre_corto": "D. Barada",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  }
+]

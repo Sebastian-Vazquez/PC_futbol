@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "Stefan",
+    "apellido": "Lenhart",
+    "nombre_corto": "S. Lenhart",
+    "fecha_nacimiento": "1990-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Eric",
+    "apellido": "Eberl",
+    "nombre_corto": "E. Eberl",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Alexander",
+    "apellido": "Köchl",
+    "nombre_corto": "A. Köchl",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Stefan",
+    "apellido": "Moll",
+    "nombre_corto": "S. Moll",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Michel",
+    "apellido": "Micossi",
+    "nombre_corto": "M. Micossi",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Nedim",
+    "apellido": "Becirevic",
+    "nombre_corto": "N. Becirevic",
+    "fecha_nacimiento": "1991-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Patrik",
+    "apellido": "Kutlesa",
+    "nombre_corto": "P. Kutlesa",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Sebastian",
+    "apellido": "Kunstätter",
+    "nombre_corto": "S. Kunstätter",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Markus",
+    "apellido": "Eckhard",
+    "nombre_corto": "M. Eckhard",
+    "fecha_nacimiento": "1990-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Thomas",
+    "apellido": "Hastreiter",
+    "nombre_corto": "T. Hastreiter",
+    "fecha_nacimiento": "1991-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Dorian",
+    "apellido": "Zoccali",
+    "nombre_corto": "D. Zoccali",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  }
+]

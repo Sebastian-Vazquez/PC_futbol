@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Samú",
+    "apellido": "Costa",
+    "nombre_corto": "S. Costa",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "POR",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 15000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Dominik",
+    "apellido": "Greif",
+    "nombre_corto": "D. Greif",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "SVK",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Martin",
+    "apellido": "Valjent",
+    "nombre_corto": "M. Valjent",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "SVK",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Robert",
+    "apellido": "Navarro",
+    "nombre_corto": "R. Navarro",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Leo",
+    "apellido": "Román",
+    "nombre_corto": "L. Román",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Pablo",
+    "apellido": "Maffeo",
+    "nombre_corto": "P. Maffeo",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ARG",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Vedat",
+    "apellido": "Muriqi",
+    "nombre_corto": "V. Muriqi",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Sergi",
+    "apellido": "Darder",
+    "nombre_corto": "S. Darder",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 4000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Cyle",
+    "apellido": "Larin",
+    "nombre_corto": "C. Larin",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "CAN",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "José",
+    "apellido": "Copete",
+    "nombre_corto": "J. Copete",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 3000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Siebe",
+    "apellido": "Van der Heyden",
+    "nombre_corto": "S. Van der He",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "BEL",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Manu",
+    "apellido": "Morlanes",
+    "nombre_corto": "M. Morlanes",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Antonio",
+    "apellido": "Sánchez",
+    "nombre_corto": "A. Sánchez",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Takuma",
+    "apellido": "Asano",
+    "nombre_corto": "T. Asano",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "JPN",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Johan",
+    "apellido": "Mojica",
+    "nombre_corto": "J. Mojica",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "COL",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Chiquinho",
+    "apellido": "Chiquinho",
+    "nombre_corto": "C. Chiquinho",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "POR",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Valery",
+    "apellido": "Fernández",
+    "nombre_corto": "V. Fernández",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Antonio",
+    "apellido": "Raíllo",
+    "nombre_corto": "A. Raíllo",
+    "fecha_nacimiento": "1992-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 1800000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Toni",
+    "apellido": "Lato",
+    "nombre_corto": "T. Lato",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 1800000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Abdón",
+    "apellido": "Prats",
+    "nombre_corto": "A. Prats",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 1200000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Marc",
+    "apellido": "Domènech",
+    "nombre_corto": "M. Domènech",
+    "fecha_nacimiento": "2007-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 1000000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Omar",
+    "apellido": "Mascarell",
+    "nombre_corto": "O. Mascarell",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 900000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Mateu",
+    "apellido": "Morey",
+    "nombre_corto": "M. Morey",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 800000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Dani",
+    "apellido": "Rodríguez",
+    "nombre_corto": "D. Rodríguez",
+    "fecha_nacimiento": "1988-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 800000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Javi",
+    "apellido": "Llabrés",
+    "nombre_corto": "J. Llabrés",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 800000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "David",
+    "apellido": "López",
+    "nombre_corto": "D. López",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 500000,
+    "calidad": 0.36
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Ben",
+    "apellido": "Morgan",
+    "nombre_corto": "B. Morgan",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "WAL",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 75000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ed",
+    "apellido": "James",
+    "nombre_corto": "E. James",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "WAL",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 50000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ruben",
+    "apellido": "Davies",
+    "nombre_corto": "R. Davies",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "WAL",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 25000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Harvey",
+    "apellido": "Wiles-Richards",
+    "nombre_corto": "H. Wiles-Rich",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Martin",
+    "apellido": "Horsell",
+    "nombre_corto": "M. Horsell",
+    "fecha_nacimiento": "1987-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Josey",
+    "apellido": "Casa-Grande",
+    "nombre_corto": "J. Casa-Grand",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "NZL",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Jack",
+    "apellido": "Flower",
+    "nombre_corto": "J. Flower",
+    "fecha_nacimiento": "1995-01-01",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Mamadou",
+    "apellido": "Diallo",
+    "nombre_corto": "M. Diallo",
+    "fecha_nacimiento": "2008-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Massimo",
+    "apellido": "Sardo",
+    "nombre_corto": "M. Sardo",
+    "fecha_nacimiento": "2008-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Nick",
+    "apellido": "Grimes",
+    "nombre_corto": "N. Grimes",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Kieran",
+    "apellido": "Parselle",
+    "nombre_corto": "K. Parselle",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Jacob",
+    "apellido": "Cook",
+    "nombre_corto": "J. Cook",
+    "fecha_nacimiento": "2007-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Jack",
+    "apellido": "Batten",
+    "nombre_corto": "J. Batten",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ollie",
+    "apellido": "Tomlinson",
+    "nombre_corto": "O. Tomlinson",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Danny",
+    "apellido": "Greenslade",
+    "nombre_corto": "D. Greenslade",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Joseph",
+    "apellido": "James",
+    "nombre_corto": "J. James",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Tresor",
+    "apellido": "Mabika",
+    "nombre_corto": "T. Mabika",
+    "fecha_nacimiento": "2008-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Joe",
+    "apellido": "Raynes",
+    "nombre_corto": "J. Raynes",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Louis",
+    "apellido": "Sweeten",
+    "nombre_corto": "L. Sweeten",
+    "fecha_nacimiento": "2008-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Jordan",
+    "apellido": "Tillson",
+    "nombre_corto": "J. Tillson",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Owen",
+    "apellido": "Pritchard",
+    "nombre_corto": "O. Pritchard",
+    "fecha_nacimiento": "1995-01-01",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Luke",
+    "apellido": "Russe",
+    "nombre_corto": "L. Russe",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Jerry",
+    "apellido": "Lawrence",
+    "nombre_corto": "J. Lawrence",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Zac",
+    "apellido": "Smith",
+    "nombre_corto": "Z. Smith",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Latrell",
+    "apellido": "Humphrey-Ewers",
+    "nombre_corto": "L. Humphrey-E",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Elliott",
+    "apellido": "Frear",
+    "nombre_corto": "E. Frear",
+    "fecha_nacimiento": "1991-06-15",
+    "nacionalidad": "ENG",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  }
+]

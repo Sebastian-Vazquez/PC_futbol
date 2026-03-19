@@ -1,0 +1,302 @@
+[
+  {
+    "nombre": "Robin",
+    "apellido": "Zentner",
+    "nombre_corto": "R. Zentner",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 4000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Lasse",
+    "apellido": "Rieß",
+    "nombre_corto": "L. Rieß",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 400000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Daniel",
+    "apellido": "Batz",
+    "nombre_corto": "D. Batz",
+    "fecha_nacimiento": "1991-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 250000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Andreas",
+    "apellido": "Hanche-Olsen",
+    "nombre_corto": "A. Hanche-Ols",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "NOR",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Moritz",
+    "apellido": "Jenz",
+    "nombre_corto": "M. Jenz",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Dominik",
+    "apellido": "Kohr",
+    "nombre_corto": "D. Kohr",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Maxim",
+    "apellido": "Leitsch",
+    "nombre_corto": "M. Leitsch",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 1500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Danny",
+    "apellido": "da Costa",
+    "nombre_corto": "D. da Costa",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 1500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Stefan",
+    "apellido": "Bell",
+    "nombre_corto": "S. Bell",
+    "fecha_nacimiento": "1992-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 800000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Maxim",
+    "apellido": "Dal",
+    "nombre_corto": "M. Dal",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 150000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Phillipp",
+    "apellido": "Mwene",
+    "nombre_corto": "P. Mwene",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 1800000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Anthony",
+    "apellido": "Caci",
+    "nombre_corto": "A. Caci",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 12000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Silvan",
+    "apellido": "Widmer",
+    "nombre_corto": "S. Widmer",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "CHE",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 1200000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Kaishu",
+    "apellido": "Sano",
+    "nombre_corto": "K. Sano",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "JPN",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 20000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Lennard",
+    "apellido": "Maloney",
+    "nombre_corto": "L. Maloney",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "USA",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Edimilson",
+    "apellido": "Fernandes",
+    "nombre_corto": "E. Fernandes",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "CHE",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 3000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Nadiem",
+    "apellido": "Amiri",
+    "nombre_corto": "N. Amiri",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 20000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Daniel",
+    "apellido": "Gleiber",
+    "nombre_corto": "D. Gleiber",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 225000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Nikolas",
+    "apellido": "Veratschnig",
+    "nombre_corto": "N. Veratschni",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 1500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Paul",
+    "apellido": "Nebel",
+    "nombre_corto": "P. Nebel",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 24000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Hyun-seok",
+    "apellido": "Hong",
+    "nombre_corto": "H. Hong",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "KOR",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Jae-sung",
+    "apellido": "Lee",
+    "nombre_corto": "J. Lee",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "KOR",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Marco",
+    "apellido": "Richter",
+    "nombre_corto": "M. Richter",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 1500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Aymen",
+    "apellido": "Barkok",
+    "nombre_corto": "A. Barkok",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "MAR",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 500000,
+    "calidad": 0.36
+  },
+  {
+    "nombre": "Gabriel",
+    "apellido": "Vidovic",
+    "nombre_corto": "G. Vidovic",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "CRO",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 3000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Arnaud",
+    "apellido": "Nordin",
+    "nombre_corto": "A. Nordin",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "FRA",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Armindo",
+    "apellido": "Sieb",
+    "nombre_corto": "A. Sieb",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 3000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Jonathan",
+    "apellido": "Burkardt",
+    "nombre_corto": "J. Burkardt",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 35000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Nelson",
+    "apellido": "Weiper",
+    "nombre_corto": "N. Weiper",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 10000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Karim",
+    "apellido": "Onisiwo",
+    "nombre_corto": "K. Onisiwo",
+    "fecha_nacimiento": "1992-06-15",
+    "nacionalidad": "AUT",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 800000,
+    "calidad": 0.36
+  }
+]

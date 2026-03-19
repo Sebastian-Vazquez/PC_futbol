@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Khvicha",
+    "apellido": "Kvaratskhelia",
+    "nombre_corto": "K. Kvaratskhe",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "GEO",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 90000000,
+    "calidad": 0.92
+  },
+  {
+    "nombre": "Alessandro",
+    "apellido": "Buongiorno",
+    "nombre_corto": "A. Buongiorno",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 50000000,
+    "calidad": 0.85
+  },
+  {
+    "nombre": "Scott",
+    "apellido": "McTominay",
+    "nombre_corto": "S. McTominay",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "SCO",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 50000000,
+    "calidad": 0.85
+  },
+  {
+    "nombre": "David",
+    "apellido": "Neres",
+    "nombre_corto": "D. Neres",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 30000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Frank",
+    "apellido": "Anguissa",
+    "nombre_corto": "F. Anguissa",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "CMR",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 27000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Stanislav",
+    "apellido": "Lobotka",
+    "nombre_corto": "S. Lobotka",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "SVK",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Giacomo",
+    "apellido": "Raspadori",
+    "nombre_corto": "G. Raspadori",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 25000000,
+    "calidad": 0.78
+  },
+  {
+    "nombre": "Romelu",
+    "apellido": "Lukaku",
+    "nombre_corto": "R. Lukaku",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "BEL",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 22000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Mathías",
+    "apellido": "Olivera",
+    "nombre_corto": "M. Olivera",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "URU",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 20000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Billy",
+    "apellido": "Gilmour",
+    "nombre_corto": "B. Gilmour",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "SCO",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 20000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Alex",
+    "apellido": "Meret",
+    "nombre_corto": "A. Meret",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 18000000,
+    "calidad": 0.7
+  },
+  {
+    "nombre": "Noah",
+    "apellido": "Okafor",
+    "nombre_corto": "N. Okafor",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "CHE",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 13000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Amir",
+    "apellido": "Rrahmani",
+    "nombre_corto": "A. Rrahmani",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 12000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Giovanni",
+    "apellido": "Di Lorenzo",
+    "nombre_corto": "G. Di Lorenzo",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 12000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Philip",
+    "apellido": "Billing",
+    "nombre_corto": "P. Billing",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "DNK",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 10000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Matteo",
+    "apellido": "Politano",
+    "nombre_corto": "M. Politano",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 10000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Elia",
+    "apellido": "Caprile",
+    "nombre_corto": "E. Caprile",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 9000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Natan",
+    "apellido": "Natan",
+    "nombre_corto": "N. Natan",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 9000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Cyril",
+    "apellido": "Ngonge",
+    "nombre_corto": "C. Ngonge",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "BEL",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 8000000,
+    "calidad": 0.62
+  },
+  {
+    "nombre": "Rafa",
+    "apellido": "Marín",
+    "nombre_corto": "R. Marín",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 7000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Michael",
+    "apellido": "Folorunsho",
+    "nombre_corto": "M. Folorunsho",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 6000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Giovanni",
+    "apellido": "Simeone",
+    "nombre_corto": "G. Simeone",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ARG",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 5000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Alessio",
+    "apellido": "Zerbin",
+    "nombre_corto": "A. Zerbin",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 4000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Gianluca",
+    "apellido": "Gaetano",
+    "nombre_corto": "G. Gaetano",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 4000000,
+    "calidad": 0.54
+  },
+  {
+    "nombre": "Leonardo",
+    "apellido": "Spinazzola",
+    "nombre_corto": "L. Spinazzola",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 3500000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "Pasquale",
+    "apellido": "Mazzocchi",
+    "nombre_corto": "P. Mazzocchi",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ITA",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 2500000,
+    "calidad": 0.45
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "nombre": "Ferhat",
+    "apellido": "Yılmaz",
+    "nombre_corto": "F. Yılmaz",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Aykut",
+    "apellido": "Topal",
+    "nombre_corto": "A. Topal",
+    "fecha_nacimiento": "1992-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Süleyman",
+    "apellido": "Demirkol",
+    "nombre_corto": "S. Demirkol",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Bahtiyar",
+    "apellido": "Yılmaz",
+    "nombre_corto": "B. Yılmaz",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ahmet",
+    "apellido": "Aydın",
+    "nombre_corto": "A. Aydın",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Emre",
+    "apellido": "Kömürcü",
+    "nombre_corto": "E. Kömürcü",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Abdullah",
+    "apellido": "Filiz",
+    "nombre_corto": "A. Filiz",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Arif",
+    "apellido": "Birşen",
+    "nombre_corto": "A. Birşen",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Biray",
+    "apellido": "Yörük",
+    "nombre_corto": "B. Yörük",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ziya",
+    "apellido": "Güven",
+    "nombre_corto": "Z. Güven",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ertunç",
+    "apellido": "Yasin Güdü",
+    "nombre_corto": "E. Yasin Güdü",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ekrem",
+    "apellido": "Arca Kobya",
+    "nombre_corto": "E. Arca Kobya",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ahmet",
+    "apellido": "Hakan Sevinç",
+    "nombre_corto": "A. Hakan Sevi",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Reha",
+    "apellido": "Yaylı",
+    "nombre_corto": "R. Yaylı",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Volkan",
+    "apellido": "Kutlu",
+    "nombre_corto": "V. Kutlu",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Fatih",
+    "apellido": "Ergin",
+    "nombre_corto": "F. Ergin",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Batuhan",
+    "apellido": "Uçan",
+    "nombre_corto": "B. Uçan",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Oğuzhan",
+    "apellido": "Kartal",
+    "nombre_corto": "O. Kartal",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  }
+]

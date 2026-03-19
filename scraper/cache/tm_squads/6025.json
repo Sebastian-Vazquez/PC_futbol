@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Fernandinho",
+    "apellido": "Fernandinho",
+    "nombre_corto": "F. Fernandinh",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 225000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Eliandro",
+    "apellido": "Eliandro",
+    "nombre_corto": "E. Eliandro",
+    "fecha_nacimiento": "1992-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 225000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Hiago",
+    "apellido": "Hiago",
+    "nombre_corto": "H. Hiago",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 100000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Daniel",
+    "apellido": "Mendes",
+    "nombre_corto": "D. Mendes",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 50000,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Wallace",
+    "apellido": "Wallace",
+    "nombre_corto": "W. Wallace",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Jordan",
+    "apellido": "Jordan",
+    "nombre_corto": "J. Jordan",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Wesley",
+    "apellido": "Wesley",
+    "nombre_corto": "W. Wesley",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Pablo",
+    "apellido": "Pablo",
+    "nombre_corto": "P. Pablo",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Felipe",
+    "apellido": "Chaves",
+    "nombre_corto": "F. Chaves",
+    "fecha_nacimiento": "1990-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Lucas",
+    "apellido": "Coutinho",
+    "nombre_corto": "L. Coutinho",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Vinícius",
+    "apellido": "Amaral",
+    "nombre_corto": "V. Amaral",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Henrique",
+    "apellido": "Gigante",
+    "nombre_corto": "H. Gigante",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Inácio",
+    "apellido": "Inácio",
+    "nombre_corto": "I. Inácio",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Gleidson",
+    "apellido": "Silva",
+    "nombre_corto": "G. Silva",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Neto",
+    "nombre_corto": "C. Neto",
+    "fecha_nacimiento": "2008-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Adson",
+    "apellido": "Adson",
+    "nombre_corto": "A. Adson",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ivan",
+    "apellido": "Ivan",
+    "nombre_corto": "I. Ivan",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Léo",
+    "apellido": "Santos",
+    "nombre_corto": "L. Santos",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Gustavo",
+    "apellido": "Petrocelli",
+    "nombre_corto": "G. Petrocelli",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Alex",
+    "apellido": "Nagib",
+    "nombre_corto": "A. Nagib",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Doda",
+    "apellido": "Doda",
+    "nombre_corto": "D. Doda",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Lucas",
+    "apellido": "Miguel",
+    "nombre_corto": "L. Miguel",
+    "fecha_nacimiento": "2007-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Bruno",
+    "apellido": "Nascimento",
+    "nombre_corto": "B. Nascimento",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Rafinha",
+    "apellido": "Rafinha",
+    "nombre_corto": "R. Rafinha",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Kauê",
+    "apellido": "Kauê",
+    "nombre_corto": "K. Kauê",
+    "fecha_nacimiento": "2002-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Hadrian",
+    "apellido": "Hadrian",
+    "nombre_corto": "H. Hadrian",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "BRA",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  }
+]

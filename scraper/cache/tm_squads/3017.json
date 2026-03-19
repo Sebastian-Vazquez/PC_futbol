@@ -1,0 +1,262 @@
+[
+  {
+    "nombre": "Jeremy",
+    "apellido": "Rivas",
+    "nombre_corto": "J. Rivas",
+    "fecha_nacimiento": "2000-06-15",
+    "nacionalidad": "VEN",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Marius",
+    "apellido": "Kuhl",
+    "nombre_corto": "M. Kuhl",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Stepan",
+    "apellido": "Andruszczyszyn",
+    "nombre_corto": "S. Andruszczy",
+    "fecha_nacimiento": "1995-06-15",
+    "nacionalidad": "UKR",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Benjamin",
+    "apellido": "Böse",
+    "nombre_corto": "B. Böse",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Nick",
+    "apellido": "Nowack",
+    "nombre_corto": "N. Nowack",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Richard",
+    "apellido": "Beulke",
+    "nombre_corto": "R. Beulke",
+    "fecha_nacimiento": "1994-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Moritz",
+    "apellido": "Eggert",
+    "nombre_corto": "M. Eggert",
+    "fecha_nacimiento": "2004-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Daniel",
+    "apellido": "Berg",
+    "nombre_corto": "D. Berg",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Thomas",
+    "apellido": "Hönle",
+    "nombre_corto": "T. Hönle",
+    "fecha_nacimiento": "1998-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Torik",
+    "apellido": "Schütze",
+    "nombre_corto": "T. Schütze",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Stephan",
+    "apellido": "Ruß",
+    "nombre_corto": "S. Ruß",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Justin",
+    "apellido": "Börner",
+    "nombre_corto": "J. Börner",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Long",
+    "apellido": "Nguyen",
+    "nombre_corto": "L. Nguyen",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Bodo",
+    "apellido": "Zeiler",
+    "nombre_corto": "B. Zeiler",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Toni",
+    "apellido": "Telle",
+    "nombre_corto": "T. Telle",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Oliver",
+    "apellido": "Mätzler",
+    "nombre_corto": "O. Mätzler",
+    "fecha_nacimiento": "2006-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Willi",
+    "apellido": "Pratsch",
+    "nombre_corto": "W. Pratsch",
+    "fecha_nacimiento": "2007-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Yannick",
+    "apellido": "Jüptner",
+    "nombre_corto": "Y. Jüptner",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Leart",
+    "apellido": "Neimi",
+    "nombre_corto": "L. Neimi",
+    "fecha_nacimiento": "2007-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Adib",
+    "apellido": "Al Akied",
+    "nombre_corto": "A. Al Akied",
+    "fecha_nacimiento": "1993-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Benno",
+    "apellido": "Sternhagen",
+    "nombre_corto": "B. Sternhagen",
+    "fecha_nacimiento": "1997-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Ahmad",
+    "apellido": "Azad",
+    "nombre_corto": "A. Azad",
+    "fecha_nacimiento": "1990-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Lorenz",
+    "apellido": "Neukirch",
+    "nombre_corto": "L. Neukirch",
+    "fecha_nacimiento": "2003-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Alex",
+    "apellido": "Karpov",
+    "nombre_corto": "A. Karpov",
+    "fecha_nacimiento": "2005-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Denys",
+    "apellido": "Mekhed",
+    "nombre_corto": "D. Mekhed",
+    "fecha_nacimiento": "1999-06-15",
+    "nacionalidad": "UKR",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  },
+  {
+    "nombre": "Paul",
+    "apellido": "Augustin",
+    "nombre_corto": "P. Augustin",
+    "fecha_nacimiento": "2001-06-15",
+    "nacionalidad": "GER",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 0,
+    "calidad": 0.28
+  }
+]
