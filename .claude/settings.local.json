@@ -46,7 +46,8 @@
       "WebFetch(domain:www.livefutbol.com)",
       "WebFetch(domain:schalke04.de)",
       "WebFetch(domain:www.calciotel.it)",
-      "Bash(python generators/wiki_squads.py)"
+      "Bash(python generators/wiki_squads.py)",
+      "Bash(find c:/Users/Cebol/OneDrive/Escritorio/PC_futbol_Sebita/pc-futbol-2026 -name portada* -o -name *.jpg -o -name *.png)"
     ]
   }
 }

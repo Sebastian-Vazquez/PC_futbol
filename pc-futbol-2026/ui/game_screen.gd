@@ -85,9 +85,12 @@ var _scrolls:     Dictionary = {}
 var _tab_btns:    Dictionary = {}
 var _fondos:      Dictionary = {}   # key -> TextureRect (fondo de pestaña)
 var _content_area: Control
+var _menu_root:   Control
 var _selector_root: Control
 var _sel_opt:     OptionButton
 var _sel_vb:      VBoxContainer
+
+const SAVE_PATH := "user://ft2026_save.json"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # READY
@@ -96,7 +99,279 @@ var _sel_vb:      VBoxContainer
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	DB.cargar_todo()
+	_mostrar_menu_principal()
+
+# ══════════════════════════════════════════════════════════════════════════════
+# MENÚ PRINCIPAL
+# ══════════════════════════════════════════════════════════════════════════════
+
+func _mostrar_menu_principal() -> void:
+	_menu_root = Control.new()
+	_menu_root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	add_child(_menu_root)
+
+	# ── Fondo portada ────────────────────────────────────────────────────────
+	var bg := TextureRect.new()
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	bg.stretch_mode = TextureRect.STRETCH_COVER
+	var tex := load("res://assets/backgrounds/portada_final.jpg")
+	if tex:
+		bg.texture = tex
+	else:
+		var cr := ColorRect.new()
+		cr.color = C_BG
+		cr.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		_menu_root.add_child(cr)
+	_menu_root.add_child(bg)
+
+	# ── Overlay oscuro general ────────────────────────────────────────────────
+	var ov := ColorRect.new()
+	ov.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	ov.color = Color(0.0, 0.01, 0.05, 0.52)
+	_menu_root.add_child(ov)
+
+	# ── Layout principal ─────────────────────────────────────────────────────
+	var vb := VBoxContainer.new()
+	vb.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	vb.add_theme_constant_override("separation", 0)
+	_menu_root.add_child(vb)
+
+	# Espacio superior
+	var sp_top := Control.new()
+	sp_top.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	sp_top.size_flags_stretch_ratio = 0.8
+	vb.add_child(sp_top)
+
+	# ── Título ───────────────────────────────────────────────────────────────
+	var title_c := CenterContainer.new()
+	vb.add_child(title_c)
+	var title_vb := VBoxContainer.new()
+	title_vb.add_theme_constant_override("separation", 6)
+	title_c.add_child(title_vb)
+
+	var title := Label.new()
+	title.text = "FÚTBOL TYCOON 2026"
+	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title.add_theme_font_size_override("font_size", 70)
+	title.add_theme_color_override("font_color", Color(0.96, 0.97, 1.0))
+	title.add_theme_color_override("font_outline_color", Color(0.05, 0.15, 0.45, 0.95))
+	title.add_theme_constant_override("outline_size", 4)
+	title.add_theme_color_override("font_shadow_color", Color(0.0, 0.0, 0.0, 0.85))
+	title.add_theme_constant_override("shadow_offset_x", 3)
+	title.add_theme_constant_override("shadow_offset_y", 4)
+	title_vb.add_child(title)
+
+	var sub := Label.new()
+	sub.text = "EL CLÁSICO DEL FÚTBOL MANAGER"
+	sub.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	sub.add_theme_font_size_override("font_size", 15)
+	sub.add_theme_color_override("font_color", Color(0.72, 0.82, 1.0, 0.88))
+	sub.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.7))
+	sub.add_theme_constant_override("outline_size", 2)
+	title_vb.add_child(sub)
+
+	# Separador decorativo
+	var sep_c := CenterContainer.new()
+	vb.add_child(sep_c)
+	var sep_line := ColorRect.new()
+	sep_line.custom_minimum_size = Vector2(380, 2)
+	sep_line.color = Color(0.35, 0.55, 0.90, 0.6)
+	sep_c.add_child(sep_line)
+
+	# Espacio
+	var sp_mid := Control.new()
+	sp_mid.custom_minimum_size = Vector2(0, 28)
+	vb.add_child(sp_mid)
+
+	# ── Botones ──────────────────────────────────────────────────────────────
+	var btn_c := CenterContainer.new()
+	vb.add_child(btn_c)
+	var btn_vb := VBoxContainer.new()
+	btn_vb.add_theme_constant_override("separation", 14)
+	btn_c.add_child(btn_vb)
+
+	var btn1 := _btn_metalico("⚽   INICIAR NUEVA PARTIDA")
+	btn1.pressed.connect(_menu_iniciar_nueva)
+	btn_vb.add_child(btn1)
+
+	var btn2 := _btn_metalico("💾   CARGAR PARTIDA")
+	btn2.pressed.connect(_cargar_partida_menu)
+	if not FileAccess.file_exists(SAVE_PATH):
+		btn2.disabled = true
+		btn2.modulate = Color(1, 1, 1, 0.45)
+	btn_vb.add_child(btn2)
+
+	var btn3 := _btn_metalico("📋   BASE DE DATOS")
+	btn3.pressed.connect(_menu_base_datos)
+	btn_vb.add_child(btn3)
+
+	# Espacio inferior
+	var sp_bot := Control.new()
+	sp_bot.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	sp_bot.size_flags_stretch_ratio = 1.2
+	vb.add_child(sp_bot)
+
+	# ── Footer ────────────────────────────────────────────────────────────────
+	var footer_bg := ColorRect.new()
+	footer_bg.custom_minimum_size = Vector2(0, 52)
+	footer_bg.color = Color(0.0, 0.02, 0.06, 0.82)
+	vb.add_child(footer_bg)
+
+	var footer_mg := MarginContainer.new()
+	footer_mg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_set_margins(footer_mg, 0, 6, 0, 6)
+	footer_bg.add_child(footer_mg)
+
+	var footer_vb := VBoxContainer.new()
+	footer_vb.add_theme_constant_override("separation", 2)
+	footer_vb.alignment = BoxContainer.ALIGNMENT_CENTER
+	footer_mg.add_child(footer_vb)
+
+	var f1 := Label.new()
+	f1.text = "BY NEURAL AETHER  ·  MADE WITH GODOT ENGINE"
+	f1.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	f1.add_theme_font_size_override("font_size", 11)
+	f1.add_theme_color_override("font_color", Color(0.75, 0.82, 1.0, 0.90))
+	footer_vb.add_child(f1)
+
+	var f2 := Label.new()
+	f2.text = "© 2026 Neural Aether · Todos los derechos reservados"
+	f2.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	f2.add_theme_font_size_override("font_size", 10)
+	f2.add_theme_color_override("font_color", Color(0.48, 0.54, 0.66, 0.75))
+	footer_vb.add_child(f2)
+
+
+func _btn_metalico(texto: String) -> Button:
+	var btn := Button.new()
+	btn.text = texto
+	btn.custom_minimum_size = Vector2(420, 62)
+	btn.alignment = HORIZONTAL_ALIGNMENT_CENTER
+
+	# Estado normal — gris metalizado con sombra profunda
+	var sn := StyleBoxFlat.new()
+	sn.bg_color          = Color(0.36, 0.39, 0.44)
+	sn.set_border_width_all(2)
+	sn.border_color      = Color(0.62, 0.66, 0.74)
+	sn.border_width_top  = 3   # highlight superior (borde más brillante arriba)
+	sn.set_corner_radius_all(6)
+	sn.shadow_color      = Color(0.0, 0.0, 0.0, 0.70)
+	sn.shadow_size       = 8
+	sn.shadow_offset     = Vector2(2, 5)
+	sn.expand_margin_bottom = 4
+	btn.add_theme_stylebox_override("normal", sn)
+
+	# Hover — más luminoso
+	var sh := sn.duplicate() as StyleBoxFlat
+	sh.bg_color      = Color(0.46, 0.50, 0.57)
+	sh.border_color  = Color(0.80, 0.86, 0.96)
+	sh.shadow_size   = 12
+	sh.shadow_color  = Color(0.0, 0.0, 0.0, 0.80)
+	btn.add_theme_stylebox_override("hover", sh)
+
+	# Pressed — hundido
+	var sp := sn.duplicate() as StyleBoxFlat
+	sp.bg_color          = Color(0.28, 0.31, 0.35)
+	sp.border_color      = Color(0.42, 0.45, 0.52)
+	sp.shadow_size       = 2
+	sp.shadow_offset     = Vector2(0, 1)
+	sp.expand_margin_bottom = 0
+	btn.add_theme_stylebox_override("pressed", sp)
+
+	# Focus (sin recuadro molesto)
+	btn.add_theme_stylebox_override("focus", sn.duplicate())
+
+	# Texto
+	btn.add_theme_font_size_override("font_size", 21)
+	btn.add_theme_color_override("font_color",         Color(0.93, 0.95, 0.99))
+	btn.add_theme_color_override("font_hover_color",   Color(1.00, 1.00, 1.00))
+	btn.add_theme_color_override("font_pressed_color", Color(0.78, 0.82, 0.92))
+	btn.add_theme_color_override("font_outline_color", Color(0.0, 0.0, 0.0, 0.55))
+	btn.add_theme_constant_override("outline_size", 1)
+	return btn
+
+
+func _menu_iniciar_nueva() -> void:
+	if _menu_root:
+		_menu_root.queue_free()
+		_menu_root = null
 	_mostrar_selector()
+
+
+func _menu_base_datos() -> void:
+	push_warning("Base de datos: por implementar")
+
+
+# ── GUARDAR / CARGAR ─────────────────────────────────────────────────────────
+
+func _guardar_partida() -> void:
+	var data := {
+		"version":    1,
+		"eq_id":      _eq_id,
+		"liga_id":    _liga_id,
+		"sem":        _sem,
+		"temporada":  _temporada,
+		"formacion":  _formacion,
+		"titulares":  _titulares,
+		"confianza":  _confianza,
+		"sueldo_mgr": _sueldo_mgr,
+		"reputacion": _reputacion,
+	}
+	var f := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
+	if f:
+		f.store_string(JSON.stringify(data, "\t"))
+		f.close()
+		_mostrar_notif_guardado()
+	else:
+		push_error("No se pudo guardar la partida en " + SAVE_PATH)
+
+
+func _mostrar_notif_guardado() -> void:
+	var lbl := Label.new()
+	lbl.text = "✔ Partida guardada"
+	lbl.add_theme_font_size_override("font_size", 14)
+	lbl.add_theme_color_override("font_color", C_GREEN)
+	lbl.position = Vector2(get_viewport_rect().size.x - 220, 8)
+	add_child(lbl)
+	var tw := create_tween()
+	tw.tween_property(lbl, "modulate:a", 0.0, 1.8).set_delay(1.5)
+	tw.tween_callback(lbl.queue_free)
+
+
+func _cargar_partida_menu() -> void:
+	if not FileAccess.file_exists(SAVE_PATH):
+		return
+	var f := FileAccess.open(SAVE_PATH, FileAccess.READ)
+	if not f:
+		return
+	var parsed := JSON.parse_string(f.get_as_text())
+	f.close()
+	if not parsed is Dictionary:
+		return
+	var d: Dictionary = parsed
+	_eq_id      = int(d.get("eq_id",      -1))
+	_liga_id    = int(d.get("liga_id",    -1))
+	_sem        = int(d.get("sem",         0))
+	_temporada  = int(d.get("temporada", 2026))
+	_formacion  = str(d.get("formacion", "4-3-3"))
+	_confianza  = int(d.get("confianza",  70))
+	_sueldo_mgr = int(d.get("sueldo_mgr", 10000))
+	_reputacion = int(d.get("reputacion", 50))
+	var tit_raw = d.get("titulares", [])
+	_titulares = []
+	for v in tit_raw:
+		_titulares.append(int(v))
+	if _eq_id < 0 or _liga_id < 0:
+		return
+	CalendarSystem.iniciar_temporada(_temporada)
+	LeagueSystem.inicializar_todas_las_ligas()
+	if _titulares.is_empty():
+		_inicializar_titulares()
+	if _menu_root:
+		_menu_root.queue_free()
+		_menu_root = null
+	_construir_juego()
+
 
 # ══════════════════════════════════════════════════════════════════════════════
 # SELECTOR DE EQUIPO
@@ -265,6 +540,16 @@ func _build_hud() -> Control:
 	_estilo_btn(btn_av, C_ACCENT)
 	btn_av.pressed.connect(_on_avanzar_semana)
 	hb.add_child(btn_av)
+
+	var sep4 := VSeparator.new()
+	hb.add_child(sep4)
+
+	var btn_save := Button.new()
+	btn_save.text = "💾 Guardar"
+	btn_save.custom_minimum_size = Vector2(110, 36)
+	_estilo_btn(btn_save, Color(0.25, 0.45, 0.25))
+	btn_save.pressed.connect(_guardar_partida)
+	hb.add_child(btn_save)
 
 	return hud
 
