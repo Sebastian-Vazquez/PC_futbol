@@ -1,0 +1,272 @@
+[
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NIR",
+    "apellido": "NIR",
+    "nombre_corto": "N. NIR",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NED",
+    "apellido": "NED",
+    "nombre_corto": "N. NED",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "MAR",
+    "apellido": "MAR",
+    "nombre_corto": "M. MAR",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NED",
+    "apellido": "NED",
+    "nombre_corto": "N. NED",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ECU",
+    "apellido": "ECU",
+    "nombre_corto": "E. ECU",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ESP",
+    "apellido": "ESP",
+    "nombre_corto": "E. ESP",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "PAR",
+    "apellido": "PAR",
+    "nombre_corto": "P. PAR",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "MOZ",
+    "apellido": "MOZ",
+    "nombre_corto": "M. MOZ",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "HAI",
+    "apellido": "HAI",
+    "nombre_corto": "H. HAI",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "SEN",
+    "apellido": "SEN",
+    "nombre_corto": "S. SEN",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "FRA",
+    "apellido": "FRA",
+    "nombre_corto": "F. FRA",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NED",
+    "apellido": "NED",
+    "nombre_corto": "N. NED",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "BFA",
+    "apellido": "BFA",
+    "nombre_corto": "B. BFA",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "COD",
+    "apellido": "COD",
+    "nombre_corto": "C. COD",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "FRA",
+    "apellido": "FRA",
+    "nombre_corto": "F. FRA",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NGA",
+    "apellido": "NGA",
+    "nombre_corto": "N. NGA",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "SRB",
+    "apellido": "SRB",
+    "nombre_corto": "S. SRB",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "SWE",
+    "apellido": "SWE",
+    "nombre_corto": "S. SWE",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NIR",
+    "apellido": "NIR",
+    "nombre_corto": "N. NIR",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "SUI",
+    "apellido": "SUI",
+    "nombre_corto": "S. SUI",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "CIV",
+    "apellido": "CIV",
+    "nombre_corto": "C. CIV",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "FRA",
+    "apellido": "FRA",
+    "nombre_corto": "F. FRA",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  }
+]

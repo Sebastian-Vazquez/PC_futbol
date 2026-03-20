@@ -43,12 +43,21 @@ _HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
+        "Chrome/131.0.0.0 Safari/537.36"
     ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept": "text/html,application/xhtml+xml,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Cache-Control": "max-age=0",
+    "Sec-Ch-Ua": '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
     "Referer": "https://www.transfermarkt.com/",
-    "DNT": "1",
 }
 
 # ── Mapeo de posiciones TM → juego ─────────────────────────────────────────
@@ -470,12 +479,21 @@ def _procesar_jugadores_raw(jugadores_raw: list) -> list:
 # ── Descarga HTTP ────────────────────────────────────────────────────────────
 
 _session = None
+_session_initialized = False
 
 def _get_session():
-    global _session
+    global _session, _session_initialized
     if _session is None:
         _session = requests.Session()
         _session.headers.update(_HEADERS)
+    if not _session_initialized:
+        # Visitar homepage para obtener cookies de sesión
+        try:
+            _session.get(_TM_BASE + "/", timeout=15)
+            time.sleep(1.5)
+        except Exception:
+            pass
+        _session_initialized = True
     return _session
 
 
@@ -484,13 +502,21 @@ def _descargar_html(tm_id: int, slug: str) -> str | None:
     url = f"{_TM_BASE}/{slug}/kader/verein/{tm_id}/saison_id/{_SAISON}"
     try:
         sess = _get_session()
-        resp = sess.get(url, timeout=20)
+        resp = sess.get(url, timeout=25)
         if resp.status_code == 200:
             return resp.text
         elif resp.status_code == 403:
             print(f"  [TM] Error 403 (bloqueado) para {slug}")
         elif resp.status_code == 404:
             print(f"  [TM] Error 404 (no encontrado) para {slug}")
+        elif resp.status_code == 405:
+            # TM bloquea la sesión: reiniciar y reintentar una vez
+            print(f"  [TM] HTTP 405 para {slug}, reintentando...")
+            time.sleep(random.uniform(4.0, 7.0))
+            resp2 = sess.get(url, timeout=25)
+            if resp2.status_code == 200:
+                return resp2.text
+            print(f"  [TM] Reintento fallido HTTP {resp2.status_code} para {slug}")
         else:
             print(f"  [TM] HTTP {resp.status_code} para {slug}")
     except requests.exceptions.Timeout:

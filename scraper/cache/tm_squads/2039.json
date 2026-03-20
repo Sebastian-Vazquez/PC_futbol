@@ -1,0 +1,252 @@
+[
+  {
+    "nombre": "SWE",
+    "apellido": "SWE",
+    "nombre_corto": "S. SWE",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "SCO",
+    "apellido": "SCO",
+    "nombre_corto": "S. SCO",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NOR",
+    "apellido": "NOR",
+    "nombre_corto": "N. NOR",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "USA",
+    "apellido": "USA",
+    "nombre_corto": "U. USA",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NOR",
+    "apellido": "NOR",
+    "nombre_corto": "N. NOR",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "IRL",
+    "apellido": "IRL",
+    "nombre_corto": "I. IRL",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "AUS",
+    "apellido": "AUS",
+    "nombre_corto": "A. AUS",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DFC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "SCO",
+    "apellido": "SCO",
+    "nombre_corto": "S. SCO",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "CHI",
+    "apellido": "CHI",
+    "nombre_corto": "C. CHI",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MCD",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "LI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "DEN",
+    "apellido": "DEN",
+    "nombre_corto": "D. DEN",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "MC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "PO",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "NED",
+    "apellido": "NED",
+    "nombre_corto": "N. NED",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "DC",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "ED",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  },
+  {
+    "nombre": "ENG",
+    "apellido": "ENG",
+    "nombre_corto": "E. ENG",
+    "fecha_nacimiento": "1996-06-15",
+    "nacionalidad": "ESP",
+    "posicion_principal": "EI",
+    "valor_mercado_real": 2000000,
+    "calidad": 0.45
+  }
+]
