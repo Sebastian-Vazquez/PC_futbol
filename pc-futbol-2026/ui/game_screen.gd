@@ -87,8 +87,21 @@ var _fondos:      Dictionary = {}   # key -> TextureRect (fondo de pestaña)
 var _content_area: Control
 var _menu_root:   Control
 var _selector_root: Control
+var _sel_pais_opt: OptionButton
 var _sel_opt:     OptionButton
 var _sel_vb:      VBoxContainer
+
+const _PAIS_NOMBRES := {
+	"ESP": "España", "ENG": "Inglaterra", "GER": "Alemania",
+	"FRA": "Francia", "ITA": "Italia",    "NED": "Países Bajos",
+	"POR": "Portugal","BEL": "Bélgica",   "TUR": "Turquía",
+	"AUT": "Austria", "ARG": "Argentina", "BRA": "Brasil",
+	"USA": "Estados Unidos", "MEX": "México", "CHI": "Chile",
+	"COL": "Colombia", "URU": "Uruguay",  "SCO": "Escocia",
+	"GRE": "Grecia",   "RUS": "Rusia",    "UKR": "Ucrania",
+	"SUI": "Suiza",    "CRO": "Croacia",  "SRB": "Serbia",
+	"DEN": "Dinamarca","SWE": "Suecia",   "NOR": "Noruega",
+}
 
 const SAVE_PATH := "user://ft2026_save.json"
 
@@ -113,7 +126,8 @@ func _mostrar_menu_principal() -> void:
 	# ── Fondo portada ────────────────────────────────────────────────────────
 	var bg := TextureRect.new()
 	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	bg.stretch_mode = TextureRect.STRETCH_COVER
+	bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	var tex := load("res://assets/backgrounds/portada_final.jpg")
 	if tex:
 		bg.texture = tex
@@ -344,7 +358,7 @@ func _cargar_partida_menu() -> void:
 	var f := FileAccess.open(SAVE_PATH, FileAccess.READ)
 	if not f:
 		return
-	var parsed := JSON.parse_string(f.get_as_text())
+	var parsed: Variant = JSON.parse_string(f.get_as_text())
 	f.close()
 	if not parsed is Dictionary:
 		return
@@ -378,24 +392,57 @@ func _cargar_partida_menu() -> void:
 # ══════════════════════════════════════════════════════════════════════════════
 
 func _mostrar_selector() -> void:
-	var cr := ColorRect.new()
-	cr.color = C_BG
-	_selector_root = cr
+	_selector_root = Control.new()
 	_selector_root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(_selector_root)
 
+	# ── Fondo portada ────────────────────────────────────────────────────────
+	var bg := TextureRect.new()
+	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	bg.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
+	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	var tex := load("res://assets/backgrounds/portada_final.jpg")
+	if tex:
+		bg.texture = tex
+	_selector_root.add_child(bg)
+
+	var overlay := ColorRect.new()
+	overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	overlay.color = Color(0, 0.01, 0.05, 0.68)
+	_selector_root.add_child(overlay)
+
+	# ── Panel central ────────────────────────────────────────────────────────
 	var center := CenterContainer.new()
 	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	_selector_root.add_child(center)
 
-	var vb := VBoxContainer.new()
-	vb.custom_minimum_size = Vector2(560, 0)
-	vb.add_theme_constant_override("separation", 10)
-	center.add_child(vb)
+	var panel := PanelContainer.new()
+	var ps := StyleBoxFlat.new()
+	ps.bg_color       = Color(0.06, 0.08, 0.12, 0.93)
+	ps.border_color   = Color(0.28, 0.34, 0.45)
+	ps.set_border_width_all(1)
+	ps.set_corner_radius_all(10)
+	panel.add_theme_stylebox_override("panel", ps)
+	center.add_child(panel)
 
-	var title := _mk_lbl("PC FÚTBOL 2026", 32, true)
+	var margin := MarginContainer.new()
+	margin.add_theme_constant_override("margin_left",   28)
+	margin.add_theme_constant_override("margin_right",  28)
+	margin.add_theme_constant_override("margin_top",    30)
+	margin.add_theme_constant_override("margin_bottom", 28)
+	panel.add_child(margin)
+
+	var vb := VBoxContainer.new()
+	vb.custom_minimum_size = Vector2(600, 0)
+	vb.add_theme_constant_override("separation", 12)
+	margin.add_child(vb)
+
+	# ── Título ───────────────────────────────────────────────────────────────
+	var title := _mk_lbl("FÚTBOL TYCOON 2026", 36, true)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title.add_theme_color_override("font_color", C_ACCENT)
+	title.add_theme_constant_override("outline_size", 3)
+	title.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.9))
 	vb.add_child(title)
 
 	var sub := _mk_lbl("Elige tu equipo y comienza tu carrera como mánager", 13)
@@ -405,7 +452,18 @@ func _mostrar_selector() -> void:
 
 	vb.add_child(_mk_sep())
 
-	# Liga selector
+	# ── Selector de País ─────────────────────────────────────────────────────
+	var hb_pais := HBoxContainer.new()
+	hb_pais.add_theme_constant_override("separation", 10)
+	vb.add_child(hb_pais)
+	var lbl_pais := _mk_lbl("País:", 13, true)
+	lbl_pais.custom_minimum_size = Vector2(60, 0)
+	hb_pais.add_child(lbl_pais)
+	_sel_pais_opt = OptionButton.new()
+	_sel_pais_opt.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	hb_pais.add_child(_sel_pais_opt)
+
+	# ── Selector de Liga ──────────────────────────────────────────────────────
 	var hb_liga := HBoxContainer.new()
 	hb_liga.add_theme_constant_override("separation", 10)
 	vb.add_child(hb_liga)
@@ -415,21 +473,52 @@ func _mostrar_selector() -> void:
 	_sel_opt = OptionButton.new()
 	_sel_opt.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	hb_liga.add_child(_sel_opt)
-	for lid in DB.ligas:
-		var liga: Dictionary = DB.ligas[lid]
-		_sel_opt.add_item(liga.get("nombre", str(lid)), int(lid))
 	_sel_opt.item_selected.connect(_on_liga_sel)
 
-	# Team list
+	# ── Lista de equipos ──────────────────────────────────────────────────────
 	var sc := ScrollContainer.new()
-	sc.custom_minimum_size = Vector2(560, 380)
+	sc.custom_minimum_size = Vector2(600, 340)
 	vb.add_child(sc)
 	_sel_vb = VBoxContainer.new()
 	_sel_vb.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_sel_vb.add_theme_constant_override("separation", 3)
 	sc.add_child(_sel_vb)
 
-	if DB.ligas.size() > 0:
+	# ── Poblar y conectar ─────────────────────────────────────────────────────
+	_poblar_paises()
+	_sel_pais_opt.item_selected.connect(_on_pais_sel)
+	if _sel_pais_opt.item_count > 0:
+		_on_pais_sel(0)
+
+func _poblar_paises() -> void:
+	var pais_set: Dictionary = {}
+	for lid in DB.ligas:
+		var liga: Dictionary = DB.ligas[lid]
+		var pid: String = liga.get("pais", "")
+		if pid != "":
+			pais_set[pid] = _PAIS_NOMBRES.get(pid, pid)
+	var sorted: Array = []
+	for pid in pais_set:
+		sorted.append([pais_set[pid], pid])
+	sorted.sort_custom(func(a: Array, b: Array) -> bool: return a[0] < b[0])
+	_sel_pais_opt.clear()
+	for entry in sorted:
+		_sel_pais_opt.add_item(entry[0])
+		_sel_pais_opt.set_item_metadata(_sel_pais_opt.item_count - 1, entry[1])
+
+func _on_pais_sel(idx: int) -> void:
+	var pid: String = _sel_pais_opt.get_item_metadata(idx)
+	var ligas_pais: Array = []
+	for lid in DB.ligas:
+		var liga: Dictionary = DB.ligas[lid]
+		if liga.get("pais", "") == pid:
+			ligas_pais.append(liga)
+	ligas_pais.sort_custom(func(a: Dictionary, b: Dictionary) -> bool:
+		return a.get("tier", 99) < b.get("tier", 99))
+	_sel_opt.clear()
+	for liga in ligas_pais:
+		_sel_opt.add_item(liga.get("nombre", "?"), int(liga.get("id", 0)))
+	if _sel_opt.item_count > 0:
 		_on_liga_sel(0)
 
 func _on_liga_sel(idx: int) -> void:
